@@ -1,81 +1,16 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>叻叻小屋 · BASE-v3</title>
-<link rel="stylesheet" href="src/style.css">
-<script type="importmap">{"imports":{"three":"./assets/three.module.js"}}</script></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>叻叻小屋 · 邻居版入口</title>
+  <meta http-equiv="refresh" content="0; url=./hiuching/index.html?mode=neighbor">
+  <script>
+    window.location.replace('./hiuching/index.html?mode=neighbor');
+  </script>
+</head>
 <body>
-<header><div class="brand"><span class="brandmark">⌑</span><div><h1>叻叻小屋 <span>建筑白模</span></h1><p>按测量图与现场照片还原 · BASE 03 · MYM-31 · 吊顶风口核对 / 家具调整 / 抽拉床双状态</p></div></div><div class="topactions"><span class="status">结构未校准 · 勿下单</span><button id="sources-btn">查看依据</button><button id="snapshot-btn">保存视图</button><button id="download-btn" class="primary">导出模型 ↓</button></div></header>
-<main>
-<aside>
-<section class="side-block project-block">
-<div class="eyebrow">BASE-v3 / 阶段</div>
-<select id="phase-select" aria-label="模型阶段"></select>
-<p id="phase-note" class="small-note"></p>
-<div class="scope"><b id="selected-name">测量范围</b><p id="selected-note">三间卧室、客餐厅、阳台、入户走廊，以及本次补齐的厨房和卫生间。</p></div>
-</section>
-<section class="side-block">
-<div class="eyebrow">SPACE / 空间定位</div>
-<button class="room selected" data-room="all"><span>全部空间</span><span>↗</span></button>
-<div id="room-list"></div>
-</section>
-<details class="side-block" open><summary>图层显示</summary>
-<div id="layer-list"></div>
-<div class="checks compact"><label class="check"><input id="names-toggle" type="checkbox" checked>空间名称</label><label class="check"><input id="doors-toggle" type="checkbox" checked>门开启</label><label class="check"><input id="routes-toggle" type="checkbox">交通路线</label><label class="check"><input id="service-toggle" type="checkbox">检修 / 开门范围</label></div>
-</details>
-<details class="side-block"><summary>顶面与剖切</summary>
-<div class="checks compact"><label class="check"><input id="roof-toggle" type="checkbox">顶面</label><label class="check"><input id="ceiling-toggle" type="checkbox">天花面板</label><label class="check"><input id="hide-ceilings" type="checkbox">隐藏吊顶看柜体</label></div>
-<label class="check cut-row"><input type="checkbox" id="cut-toggle"><span>水平剖切</span><output id="cut-value">1.20 m</output></label>
-<input aria-label="剖切高度" id="cut-height" type="range" min="0.3" max="2.95" step="0.01" value="1.2" disabled>
-</details>
-<details class="side-block"><summary>专项核对</summary>
-<div class="task-list">
-<label class="check task-check"><input id="levels-toggle" type="checkbox"><span><b>标高显示</b><small>房间净高与完成面预览</small></span></label>
-<label class="check task-check"><input id="height-audit-toggle" type="checkbox"><span><b>层高 / 柜体冲突</b><small>点框查看原因</small></span></label>
-<label class="check task-check"><input id="hvac-toggle" type="checkbox"><span><b>风口核对</b><small>蓝回风 / 橙送风</small></span></label>
-<label class="check task-check"><input id="kitchen-services" type="checkbox"><span><b>厨房燃气表柜</b><small>打开服务柜查看</small></span></label>
-<label class="check task-check"><input id="entry-interior" type="checkbox"><span><b>鞋柜 / 家政柜</b><small>查看柜体分格</small></span></label>
-<label class="check task-check"><input id="vanity-toggle" type="checkbox"><span><b>主卧台板</b><small>左中台板抽出状态</small></span></label>
-<label class="check task-check"><input id="study-bed-toggle" type="checkbox"><span><b>书房展床冲突</b><small>1800mm 展开校核</small></span></label>
-</div>
-<button id="measure-btn">标高与尺寸 · 待测记录</button>
-</details>
-<details class="side-block mep-controls"><summary>水电核对</summary>
-<label class="check"><input id="mep-toggle" type="checkbox">在3D中显示水电点位</label>
-<select id="mep-filter" aria-label="水电类别"><option value="all">全部点位</option><option value="electric">黄色 · 电气插座符号</option><option value="switch">紫色 · 开关符号</option><option value="water">蓝色 · 给水点位</option><option value="drain">绿色 · 排水符号</option><option value="smart">红色 · 智能面板保护位置</option></select>
-<select id="mep-room-filter" aria-label="水电所在空间"><option value="all">全部空间</option></select>
-<select id="mep-point" hidden aria-label="选择水电点位"><option value="">选择点位查看依据</option></select>
-<div id="mep-point-summary" class="mep-summary">选择类别或空间后，在下方点选点位。</div>
-<div id="mep-point-list" class="mep-point-list" aria-label="水电点位列表"></div>
-<button id="mep-room">定位所选点所在房间</button>
-<p class="small-note">彩色点可穿透遮挡显示。位置按房间映射，高度仅示意；不代表墙内走线。</p>
-</details>
-<details class="side-block"><summary>光影设置</summary>
-<label class="select-label" for="lighting">光影</label>
-<select id="lighting"><option value="arctic">Arctic · 柔白</option><option value="studio">Soft Studio · 柔光</option><option value="sun">Sunlight · 展示日光</option><option value="flat">Flat · 均匀</option></select>
-<label class="range-label">方向<input id="light-angle" type="range" min="0" max="360" value="315"></label>
-<label class="range-label">高度<input id="light-elevation" type="range" min="15" max="85" value="60"></label>
-<label class="range-label">环境光<input id="ambient" type="range" min="0.2" max="3" step=".1" value="2"></label>
-<div class="checks compact"><label class="check"><input id="shadow-toggle" type="checkbox" checked>阴影</label><label class="check"><input id="outline-toggle" type="checkbox" checked>轮廓线</label></div>
-</details>
-<details class="side-block"><summary>资料依据</summary>
-<a class="reference-link" href="reports/主卧接角核对.html" target="_blank">结构差异与DWG原图 ↗</a>
-<a class="reference-link" href="reports/层高冲突核对.html" target="_blank">全屋层高与吊顶冲突核对 ↗</a>
-<a class="reference-link" href="https://www.kujiale.cn/design/3FO3EC7CJORS/airoaming?fromqrcode=true" target="_blank" rel="noopener">木与梦原方案 · 酷家乐改2 ↗</a>
-<a class="reference-link" href="reports/交付图分层核对.html" target="_blank">开发商图分层核对表</a>
-<a class="reference-link" href="reports/services/index.html" target="_blank">水电核对 · 点位 / 回路 / 给排水 ↗</a>
-<div class="small-note">建筑基准锁定。墙顶 2.95m 仅为显示包络，原始板底待测；净高分房间记录。</div>
-</details>
-</aside>
-<section id="stage" aria-label="三维白模查看区域"><div id="canvas-wrap"></div><div id="labels"></div>
-<div class="stage-title"><span id="view-name">整体轴测</span><span id="mode-note">白模 / 门窗真实留洞</span></div>
-<div id="object-info" hidden></div><div id="loading">正在建立建筑白模…</div>
-<div id="plan-view" hidden><svg id="plan-svg" viewBox="110 20 780 700" aria-label="与原图对齐的二维模型"><image href="assets/source-plan.png" x="0" y="0" width="1013" height="724" id="source-underlay" opacity=".50"/><g id="plan-geometry"></g></svg><div class="plan-tools"><label>参考底图 <select id="plan-source"><option value="full">完整户型图 · 含厨卫</option><option value="ikea">宜家测量图</option></select></label><label><input id="overlay-toggle" type="checkbox" checked>叠加尺寸原图</label><label>模型不透明度 <input id="plan-opacity" type="range" min=".1" max="1" step=".05" value=".65"></label></div></div>
-<div class="viewbar" aria-label="观察方式"><button data-view="perspective">透视</button><button data-view="axon" class="active">轴测</button><button data-view="top">俯视</button><button data-view="plan">平面核对</button><button data-view="walk">室内漫游</button><span></span><button id="fit-btn">整体复位</button></div>
-<div class="stage-foot"><span id="help">拖动旋转 · 右键平移 · 滚轮缩放</span><span>图上为北 <i>光照仅供展示</i></span></div>
-<div id="walk-pad" hidden><button data-step="forward" aria-label="前进">↑</button><div><button data-step="left" aria-label="左移">←</button><button data-step="backward" aria-label="后退">↓</button><button data-step="right" aria-label="右移">→</button></div></div>
-</section>
-</main>
-<dialog id="sources"><div class="dialog-head"><div><div class="eyebrow">SOURCE & ASSUMPTIONS</div><h2>建模依据与待核实项</h2></div><button id="sources-close" aria-label="关闭依据">×</button></div><div class="source-tabs"><button data-source="master-hvac-cad.png">主卧DWG吊顶实体核对</button><button data-source="kujiale-plan.png">酷家乐改2平面</button><button data-source="mym-contact.jpg">木与梦全屋方案</button><button data-source="mym-study.jpg">木与梦书房</button><button data-source="mym-living.jpg">木与梦餐边柜</button><button data-source="structure-unit02.png">开发商结构标高</button><button data-source="balcony-measured.png">阳台量房标注</button><button data-source="full-plan.jpg" class="active">完整户型图</button><button data-source="site-kitchen-new.jpg">厨房新增照片</button><button data-source="kitchen-video-contact.jpg">厨房视频关键帧</button><button data-source="site-bathroom-new.jpg">卫生间照片</button><button data-source="source-plan.png">尺寸平面图</button><button data-source="source-3d.png">原立体图</button><button data-source="site-measurements.jpg">现场手绘图</button><button data-source="site-balcony.jpg">阳台照片</button><button data-source="site-kitchen.jpg">厨房边界</button></div><img id="source-image" src="assets/full-plan.jpg" alt="建模参考资料"><ol id="assumptions"></ol><p class="files"><a href="spatial.json" download>空间定义</a> · <a href="reports/说明与核对.md" download>操作说明与核对记录</a> · <a href="models/宜家建筑白模.glb" download>建筑白模 GLB</a></p></dialog>
-<dialog id="measure-dialog"><div class="dialog-head"><h2>标高与固定物尺寸</h2><button id="measure-close" aria-label="关闭尺寸记录">×</button></div><p class="small-note">单位：米。琥珀色字段为显示暂值，修改只用于本次预览；请导出记录保存。客厅完成面 ±0.000 为比较基准。建筑结构面与原始图纸不会随装修阶段改变。</p><div id="measure-fields"></div><p id="measure-feedback" role="status"></p><button id="apply-measures" class="primary">应用预览值</button> <button id="export-measures">导出本次记录</button><p class="small-note">另待现场定位：冰箱位、燃气检修净距、检修口、窗帘盒宽深、边吊宽度。未完成实测前不可将显示体块当成定制或施工尺寸。</p></dialog>
-<div id="toast" role="status" hidden></div><script type="module" src="src/viewer.js"></script>
-</body></html>
+  <p>正在跳转到公开版本...</p>
+  <a href="./hiuching/index.html?mode=neighbor">点击进入公开版本</a>
+</body>
+</html>
