@@ -34,10 +34,29 @@ function hideForPublicMode(){
    block.style.display='none';
   }
  }
+ const softFurniturePattern=/\u8f6f\u88c5|\u5bb6\u5177|\u8bbe\u8ba1\u7248|\u6d74\u623f|\u7a7a\u95f4|\u6761\u7ebf|\u8863\u67dc|\u5361\u53f6|\u6905\u6750|\u6905\u4f53|\u684c\u9762|\u6905\u5b50|\u5929\u95f4|\u67dc\u9762|\u6d4b\u91cf|\u62bd\u5c4f|\u8f7b\u5c04/;
+ for(const input of document.querySelectorAll('input[id^="layer-"]')){
+  const label=input.closest('label');
+  const text=label?.textContent?.trim()||'';
+  if(!softFurniturePattern.test(text)){
+   continue;
+  }
+  if(label) label.style.display='none';
+  input.checked=false;
+  if(typeof existing.setLayer==='function'){
+   existing.setLayer(input.id.slice(6), false);
+  }
+ }
+ for(const sourceBtn of document.querySelectorAll('#sources button[data-source]')){
+  const src=sourceBtn.dataset.source||'';
+  if(/mym-/i.test(src)){
+   sourceBtn.hidden=true;
+  }
+ }
  const dialog=document.getElementById('measure-dialog');
  if(dialog instanceof HTMLElement){dialog.style.display='none';}
  const status=document.querySelector('.status');
- if(status) status.textContent='公开展示版（含精装修 + 开发商核对资料 + 水电点位）';
+ if(status) status.textContent='公开展示版（含精装核对资料 + 开发商核对资料 + 水电点位）';
 }
 const plane=new THREE.Plane(new THREE.Vector3(0,-1,0),1.2);const caps=new THREE.Group();scene.add(caps);const capMat=new THREE.MeshBasicMaterial({color:0x161b18,side:THREE.DoubleSide});const capGeo=new THREE.PlaneGeometry(1,1);let capMeshes=model.solids.map(s=>{const m=new THREE.Mesh(capGeo,capMat);m.rotation.x=-Math.PI/2;caps.add(m);return {m,s};});
 let entryHidden=[];
