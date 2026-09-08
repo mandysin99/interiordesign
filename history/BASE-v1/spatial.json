@@ -1,0 +1,4596 @@
+{
+  "schema": "residential-spatial-design/1.0",
+  "version": "BASE-v1",
+  "stage": "white-model-review",
+  "units": "metres",
+  "coordinate_system": "X right on source drawing; Y up; Z down on source drawing",
+  "source": {
+    "plan": "assets/source-plan.png",
+    "reference": "assets/source-3d.png",
+    "pixel_origin": [
+      158,
+      48
+    ],
+    "pixels_per_metre": 64.0,
+    "orientation": "unknown",
+    "site_photos": "/Users/beverley/Desktop/new home/宜家/现场照片"
+  },
+  "wall_height": 2.7,
+  "boxes": [
+    {
+      "id": "W-balcony-left-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        -0.00625,
+        0,
+        0.0
+      ],
+      "max": [
+        0.19375,
+        2.7,
+        1.9375
+      ],
+      "source_rect": [
+        157.6,
+        48,
+        170.4,
+        172
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-balcony-right-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.19125,
+        0,
+        0.0
+      ],
+      "max": [
+        3.37125,
+        2.7,
+        1.9375
+      ],
+      "source_rect": [
+        362.24,
+        48,
+        373.76,
+        172
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-balcony-front-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.09375,
+        0,
+        0.01375
+      ],
+      "max": [
+        0.165,
+        2.7,
+        0.17375
+      ],
+      "source_rect": [
+        164,
+        48.88,
+        168.56,
+        59.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-balcony-front-sill-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.165,
+        0,
+        0.01375
+      ],
+      "max": [
+        3.21,
+        0.16,
+        0.17375
+      ],
+      "source_rect": [
+        168.56,
+        48.88,
+        363.44,
+        59.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-balcony-front-lintel-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.165,
+        2.45,
+        0.01375
+      ],
+      "max": [
+        3.21,
+        2.7,
+        0.17375
+      ],
+      "source_rect": [
+        168.56,
+        48.88,
+        363.44,
+        59.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-balcony-front-jamb-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.21,
+        0,
+        0.01375
+      ],
+      "max": [
+        3.28125,
+        2.7,
+        0.17375
+      ],
+      "source_rect": [
+        363.44,
+        48.88,
+        368,
+        59.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-balcony-living-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.09375,
+        0,
+        1.85312
+      ],
+      "max": [
+        0.73625,
+        2.7,
+        2.05313
+      ],
+      "source_rect": [
+        164,
+        166.6,
+        205.12,
+        179.4
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-balcony-living-lintel-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.73625,
+        2.353,
+        1.85312
+      ],
+      "max": [
+        2.82625,
+        2.7,
+        2.05313
+      ],
+      "source_rect": [
+        205.12,
+        166.6,
+        338.88,
+        179.4
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-balcony-living-jamb-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        2.82625,
+        0,
+        1.85312
+      ],
+      "max": [
+        3.125,
+        2.7,
+        2.05313
+      ],
+      "source_rect": [
+        338.88,
+        166.6,
+        358,
+        179.4
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-living-west-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        -0.00625,
+        0,
+        1.95312
+      ],
+      "max": [
+        0.19375,
+        2.7,
+        5.76562
+      ],
+      "source_rect": [
+        157.6,
+        173,
+        170.4,
+        417
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-living-notch-north-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.09375,
+        0,
+        5.67563
+      ],
+      "max": [
+        0.45312,
+        2.7,
+        5.85562
+      ],
+      "source_rect": [
+        164,
+        411.24,
+        187,
+        422.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-west-portal-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.37312,
+        0,
+        5.76562
+      ],
+      "max": [
+        0.53313,
+        2.7,
+        5.85875
+      ],
+      "source_rect": [
+        181.88,
+        417,
+        192.12,
+        422.96
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-west-portal-lintel-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.37312,
+        2.28,
+        5.85875
+      ],
+      "max": [
+        0.53313,
+        2.7,
+        7.07875
+      ],
+      "source_rect": [
+        181.88,
+        422.96,
+        192.12,
+        501.04
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-west-portal-jamb-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.37312,
+        0,
+        7.07875
+      ],
+      "max": [
+        0.53313,
+        2.7,
+        7.17188
+      ],
+      "source_rect": [
+        181.88,
+        501.04,
+        192.12,
+        507
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-west-return-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        -0.23438,
+        0,
+        7.08188
+      ],
+      "max": [
+        0.45312,
+        2.7,
+        7.26187
+      ],
+      "source_rect": [
+        143,
+        501.24,
+        187,
+        512.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-west-niche-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        -0.32437,
+        0,
+        7.17188
+      ],
+      "max": [
+        -0.14438,
+        2.7,
+        8.1875
+      ],
+      "source_rect": [
+        137.24,
+        507,
+        148.76,
+        572
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-west-return-south-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        -0.23438,
+        0,
+        8.0975
+      ],
+      "max": [
+        0.46875,
+        2.7,
+        8.2775
+      ],
+      "source_rect": [
+        143,
+        566.24,
+        188,
+        577.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-entry-west-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.37875,
+        0,
+        8.1875
+      ],
+      "max": [
+        0.55875,
+        2.7,
+        9.98438
+      ],
+      "source_rect": [
+        182.24,
+        572,
+        193.76,
+        687
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-entry-south-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.46875,
+        0,
+        9.89438
+      ],
+      "max": [
+        0.57375,
+        2.7,
+        10.07437
+      ],
+      "source_rect": [
+        188,
+        681.24,
+        194.72,
+        692.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-entry-south-lintel-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        0.57375,
+        2.28,
+        9.89438
+      ],
+      "max": [
+        1.61375,
+        2.7,
+        10.07437
+      ],
+      "source_rect": [
+        194.72,
+        681.24,
+        261.28,
+        692.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-entry-south-jamb-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        1.61375,
+        0,
+        9.89438
+      ],
+      "max": [
+        1.71875,
+        2.7,
+        10.07437
+      ],
+      "source_rect": [
+        261.28,
+        681.24,
+        268,
+        692.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-kitchen-east-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        1.64875,
+        0,
+        7.84375
+      ],
+      "max": [
+        1.78875,
+        2.7,
+        7.86562
+      ],
+      "source_rect": [
+        263.52,
+        550,
+        272.48,
+        551.4
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-kitchen-east-lintel-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        1.64875,
+        2.28,
+        7.86562
+      ],
+      "max": [
+        1.78875,
+        2.7,
+        9.91563
+      ],
+      "source_rect": [
+        263.52,
+        551.4,
+        272.48,
+        682.6
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-kitchen-east-jamb-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        1.64875,
+        0,
+        9.91563
+      ],
+      "max": [
+        1.78875,
+        2.7,
+        9.98438
+      ],
+      "source_rect": [
+        263.52,
+        682.6,
+        272.48,
+        687
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-kitchen-north-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        1.71875,
+        0,
+        7.77375
+      ],
+      "max": [
+        1.77531,
+        2.7,
+        7.91375
+      ],
+      "source_rect": [
+        268,
+        545.52,
+        271.62,
+        554.48
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-kitchen-north-lintel-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        1.77531,
+        2.28,
+        7.77375
+      ],
+      "max": [
+        3.11531,
+        2.7,
+        7.91375
+      ],
+      "source_rect": [
+        271.62,
+        545.52,
+        357.38,
+        554.48
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-kitchen-north-jamb-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.11531,
+        0,
+        7.77375
+      ],
+      "max": [
+        3.17188,
+        2.7,
+        7.91375
+      ],
+      "source_rect": [
+        357.38,
+        545.52,
+        361,
+        554.48
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-living-east-lower-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.07188,
+        0,
+        6.04688
+      ],
+      "max": [
+        3.27187,
+        2.7,
+        7.84375
+      ],
+      "source_rect": [
+        354.6,
+        435,
+        367.4,
+        550
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-corridor-south-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.17188,
+        0,
+        5.96687
+      ],
+      "max": [
+        3.595,
+        2.7,
+        6.12688
+      ],
+      "source_rect": [
+        361,
+        429.88,
+        388.08,
+        440.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-corridor-south-lintel-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.595,
+        2.28,
+        5.96687
+      ],
+      "max": [
+        4.405,
+        2.7,
+        6.12688
+      ],
+      "source_rect": [
+        388.08,
+        429.88,
+        439.92,
+        440.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-corridor-south-jamb-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        4.405,
+        0,
+        5.96687
+      ],
+      "max": [
+        6.11375,
+        2.7,
+        6.12688
+      ],
+      "source_rect": [
+        439.92,
+        429.88,
+        549.28,
+        440.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-corridor-south-sill-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        6.11375,
+        0,
+        5.96687
+      ],
+      "max": [
+        6.82375,
+        0.405,
+        6.12688
+      ],
+      "source_rect": [
+        549.28,
+        429.88,
+        594.72,
+        440.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-corridor-south-lintel-4",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        6.11375,
+        1.235,
+        5.96687
+      ],
+      "max": [
+        6.82375,
+        2.7,
+        6.12688
+      ],
+      "source_rect": [
+        549.28,
+        429.88,
+        594.72,
+        440.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-corridor-south-jamb-5",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        6.82375,
+        0,
+        5.96687
+      ],
+      "max": [
+        7.0,
+        2.7,
+        6.12688
+      ],
+      "source_rect": [
+        594.72,
+        429.88,
+        606,
+        440.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bedroom1-west-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.015,
+        0,
+        1.95312
+      ],
+      "max": [
+        3.235,
+        2.7,
+        4.85938
+      ],
+      "source_rect": [
+        350.96,
+        173,
+        365.04,
+        359
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bedroom12-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.53062,
+        0,
+        1.71875
+      ],
+      "max": [
+        5.75062,
+        2.7,
+        4.85938
+      ],
+      "source_rect": [
+        511.96,
+        158,
+        526.04,
+        359
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bedroom23-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        7.98375,
+        0,
+        1.71875
+      ],
+      "max": [
+        8.20375,
+        2.7,
+        4.95312
+      ],
+      "source_rect": [
+        668.96,
+        158,
+        683.04,
+        365
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bedroom1-south-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.125,
+        0,
+        4.77937
+      ],
+      "max": [
+        4.54,
+        2.7,
+        4.93938
+      ],
+      "source_rect": [
+        358,
+        353.88,
+        448.56,
+        364.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bedroom1-south-lintel-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        4.54,
+        2.28,
+        4.77937
+      ],
+      "max": [
+        5.46,
+        2.7,
+        4.93938
+      ],
+      "source_rect": [
+        448.56,
+        353.88,
+        507.44,
+        364.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bedroom1-south-jamb-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.46,
+        0,
+        4.77937
+      ],
+      "max": [
+        5.64062,
+        2.7,
+        4.93938
+      ],
+      "source_rect": [
+        507.44,
+        353.88,
+        519,
+        364.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bedroom2-south-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.64062,
+        0,
+        4.77937
+      ],
+      "max": [
+        5.90719,
+        2.7,
+        4.93938
+      ],
+      "source_rect": [
+        519,
+        353.88,
+        536.06,
+        364.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bedroom2-south-lintel-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.90719,
+        2.28,
+        4.77937
+      ],
+      "max": [
+        6.82719,
+        2.7,
+        4.93938
+      ],
+      "source_rect": [
+        536.06,
+        353.88,
+        594.94,
+        364.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bedroom2-south-jamb-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        6.82719,
+        0,
+        4.77937
+      ],
+      "max": [
+        8.09375,
+        2.7,
+        4.93938
+      ],
+      "source_rect": [
+        594.94,
+        353.88,
+        676,
+        364.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-master-neck-north-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        7.0,
+        0,
+        4.87312
+      ],
+      "max": [
+        8.09375,
+        2.7,
+        5.03313
+      ],
+      "source_rect": [
+        606,
+        359.88,
+        676,
+        370.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-master-door-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        6.92,
+        0,
+        4.95312
+      ],
+      "max": [
+        7.08,
+        2.7,
+        5.00875
+      ],
+      "source_rect": [
+        600.88,
+        365,
+        611.12,
+        368.56
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-master-door-lintel-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        6.92,
+        2.28,
+        5.00875
+      ],
+      "max": [
+        7.08,
+        2.7,
+        5.92875
+      ],
+      "source_rect": [
+        600.88,
+        368.56,
+        611.12,
+        427.44
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-master-door-jamb-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        6.92,
+        0,
+        5.92875
+      ],
+      "max": [
+        7.08,
+        2.7,
+        6.04688
+      ],
+      "source_rect": [
+        600.88,
+        427.44,
+        611.12,
+        435
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-master-east-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        10.53063,
+        0,
+        2.39062
+      ],
+      "max": [
+        10.75062,
+        2.7,
+        6.04688
+      ],
+      "source_rect": [
+        831.96,
+        201,
+        846.04,
+        435
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-room-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.125,
+        0,
+        2.30063
+      ],
+      "max": [
+        3.33781,
+        2.7,
+        2.48062
+      ],
+      "source_rect": [
+        358,
+        195.24,
+        371.62,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-room-sill-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.33781,
+        0,
+        2.30063
+      ],
+      "max": [
+        5.42781,
+        0.425,
+        2.48062
+      ],
+      "source_rect": [
+        371.62,
+        195.24,
+        505.38,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-room-lintel-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.33781,
+        2.245,
+        2.30063
+      ],
+      "max": [
+        5.42781,
+        2.7,
+        2.48062
+      ],
+      "source_rect": [
+        371.62,
+        195.24,
+        505.38,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-room-jamb-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.42781,
+        0,
+        2.30063
+      ],
+      "max": [
+        5.64062,
+        2.7,
+        2.48062
+      ],
+      "source_rect": [
+        505.38,
+        195.24,
+        519,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "bay-bedroom1-platform",
+      "kind": "bay-sill",
+      "layer": "architecture",
+      "min": [
+        3.33781,
+        0,
+        1.71875
+      ],
+      "max": [
+        5.42781,
+        0.425,
+        2.39062
+      ],
+      "source_rect": [
+        371.62,
+        158,
+        505.38,
+        201
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-outer-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.27531,
+        0,
+        1.65875
+      ],
+      "max": [
+        3.97375,
+        2.7,
+        1.77875
+      ],
+      "source_rect": [
+        367.62,
+        154.16,
+        412.32,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-outer-sill-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.97375,
+        0,
+        1.65875
+      ],
+      "max": [
+        5.46375,
+        0.425,
+        1.77875
+      ],
+      "source_rect": [
+        412.32,
+        154.16,
+        507.68,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-outer-lintel-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.97375,
+        2.245,
+        1.65875
+      ],
+      "max": [
+        5.46375,
+        2.7,
+        1.77875
+      ],
+      "source_rect": [
+        412.32,
+        154.16,
+        507.68,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-outer-jamb-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.46375,
+        0,
+        1.65875
+      ],
+      "max": [
+        5.49031,
+        2.7,
+        1.77875
+      ],
+      "source_rect": [
+        507.68,
+        154.16,
+        509.38,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-left-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        3.26656,
+        0,
+        1.71875
+      ],
+      "max": [
+        3.34656,
+        2.7,
+        2.39062
+      ],
+      "source_rect": [
+        367.06,
+        158,
+        372.18,
+        201
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom1-right-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.41906,
+        0,
+        1.71875
+      ],
+      "max": [
+        5.49906,
+        2.7,
+        2.39062
+      ],
+      "source_rect": [
+        504.82,
+        158,
+        509.94,
+        201
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-room-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.64062,
+        0,
+        2.30063
+      ],
+      "max": [
+        5.76969,
+        2.7,
+        2.48062
+      ],
+      "source_rect": [
+        519,
+        195.24,
+        527.26,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-room-sill-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.76969,
+        0,
+        2.30063
+      ],
+      "max": [
+        7.96469,
+        0.425,
+        2.48062
+      ],
+      "source_rect": [
+        527.26,
+        195.24,
+        667.74,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-room-lintel-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.76969,
+        2.251,
+        2.30063
+      ],
+      "max": [
+        7.96469,
+        2.7,
+        2.48062
+      ],
+      "source_rect": [
+        527.26,
+        195.24,
+        667.74,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-room-jamb-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        7.96469,
+        0,
+        2.30063
+      ],
+      "max": [
+        8.09375,
+        2.7,
+        2.48062
+      ],
+      "source_rect": [
+        667.74,
+        195.24,
+        676,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "bay-bedroom2-platform",
+      "kind": "bay-sill",
+      "layer": "architecture",
+      "min": [
+        5.76969,
+        0,
+        1.71875
+      ],
+      "max": [
+        7.96469,
+        0.425,
+        2.39062
+      ],
+      "source_rect": [
+        527.26,
+        158,
+        667.74,
+        201
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-outer-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.70719,
+        0,
+        1.65875
+      ],
+      "max": [
+        5.76969,
+        2.7,
+        1.77875
+      ],
+      "source_rect": [
+        523.26,
+        154.16,
+        527.26,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-outer-sill-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.76969,
+        0,
+        1.65875
+      ],
+      "max": [
+        7.96469,
+        0.425,
+        1.77875
+      ],
+      "source_rect": [
+        527.26,
+        154.16,
+        667.74,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-outer-lintel-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.76969,
+        2.251,
+        1.65875
+      ],
+      "max": [
+        7.96469,
+        2.7,
+        1.77875
+      ],
+      "source_rect": [
+        527.26,
+        154.16,
+        667.74,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-outer-jamb-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        7.96469,
+        0,
+        1.65875
+      ],
+      "max": [
+        8.02719,
+        2.7,
+        1.77875
+      ],
+      "source_rect": [
+        667.74,
+        154.16,
+        671.74,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-left-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        5.69844,
+        0,
+        1.71875
+      ],
+      "max": [
+        5.77844,
+        2.7,
+        2.39062
+      ],
+      "source_rect": [
+        522.7,
+        158,
+        527.8199999999999,
+        201
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-bedroom2-right-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        7.95594,
+        0,
+        1.71875
+      ],
+      "max": [
+        8.03594,
+        2.7,
+        2.39062
+      ],
+      "source_rect": [
+        667.1800000000001,
+        158,
+        672.3,
+        201
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-room-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.09375,
+        0,
+        2.30063
+      ],
+      "max": [
+        8.49875,
+        2.7,
+        2.48062
+      ],
+      "source_rect": [
+        676,
+        195.24,
+        701.92,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-room-sill-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.49875,
+        0,
+        2.30063
+      ],
+      "max": [
+        10.43875,
+        0.435,
+        2.48062
+      ],
+      "source_rect": [
+        701.92,
+        195.24,
+        826.08,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-room-lintel-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.49875,
+        2.251,
+        2.30063
+      ],
+      "max": [
+        10.43875,
+        2.7,
+        2.48062
+      ],
+      "source_rect": [
+        701.92,
+        195.24,
+        826.08,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-room-jamb-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        10.43875,
+        0,
+        2.30063
+      ],
+      "max": [
+        10.64062,
+        2.7,
+        2.48062
+      ],
+      "source_rect": [
+        826.08,
+        195.24,
+        839,
+        206.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "bay-master-top-platform",
+      "kind": "bay-sill",
+      "layer": "architecture",
+      "min": [
+        8.49875,
+        0,
+        1.71875
+      ],
+      "max": [
+        10.43875,
+        0.435,
+        2.39062
+      ],
+      "source_rect": [
+        701.92,
+        158,
+        826.08,
+        201
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-outer-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.43625,
+        0,
+        1.65875
+      ],
+      "max": [
+        8.49875,
+        2.7,
+        1.77875
+      ],
+      "source_rect": [
+        697.92,
+        154.16,
+        701.92,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-outer-sill-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.49875,
+        0,
+        1.65875
+      ],
+      "max": [
+        10.43875,
+        0.435,
+        1.77875
+      ],
+      "source_rect": [
+        701.92,
+        154.16,
+        826.08,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-outer-lintel-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.49875,
+        2.251,
+        1.65875
+      ],
+      "max": [
+        10.43875,
+        2.7,
+        1.77875
+      ],
+      "source_rect": [
+        701.92,
+        154.16,
+        826.08,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-outer-jamb-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        10.43875,
+        0,
+        1.65875
+      ],
+      "max": [
+        10.50125,
+        2.7,
+        1.77875
+      ],
+      "source_rect": [
+        826.08,
+        154.16,
+        830.08,
+        161.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-left-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.4275,
+        0,
+        1.71875
+      ],
+      "max": [
+        8.5075,
+        2.7,
+        2.39062
+      ],
+      "source_rect": [
+        697.36,
+        158,
+        702.4799999999999,
+        201
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-top-right-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        10.43,
+        0,
+        1.71875
+      ],
+      "max": [
+        10.51,
+        2.7,
+        2.39062
+      ],
+      "source_rect": [
+        825.5200000000001,
+        158,
+        830.64,
+        201
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-room-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        7.0,
+        0,
+        5.95688
+      ],
+      "max": [
+        8.28625,
+        2.7,
+        6.13687
+      ],
+      "source_rect": [
+        606,
+        429.24,
+        688.3199999999999,
+        440.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-room-sill-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.28625,
+        0,
+        5.95688
+      ],
+      "max": [
+        10.52625,
+        0.425,
+        6.13687
+      ],
+      "source_rect": [
+        688.3199999999999,
+        429.24,
+        831.6800000000001,
+        440.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-room-lintel-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.28625,
+        2.249,
+        5.95688
+      ],
+      "max": [
+        10.52625,
+        2.7,
+        6.13687
+      ],
+      "source_rect": [
+        688.3199999999999,
+        429.24,
+        831.6800000000001,
+        440.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-room-jamb-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        10.52625,
+        0,
+        5.95688
+      ],
+      "max": [
+        10.64062,
+        2.7,
+        6.13687
+      ],
+      "source_rect": [
+        831.6800000000001,
+        429.24,
+        839,
+        440.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "bay-master-bottom-platform",
+      "kind": "bay-sill",
+      "layer": "architecture",
+      "min": [
+        8.28625,
+        0,
+        6.04688
+      ],
+      "max": [
+        10.52625,
+        0.425,
+        6.64062
+      ],
+      "source_rect": [
+        688.3199999999999,
+        435,
+        831.6800000000001,
+        473
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-outer-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.22375,
+        0,
+        6.58063
+      ],
+      "max": [
+        8.28625,
+        2.7,
+        6.70062
+      ],
+      "source_rect": [
+        684.3199999999999,
+        469.16,
+        688.3199999999999,
+        476.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-outer-sill-1",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.28625,
+        0,
+        6.58063
+      ],
+      "max": [
+        10.52625,
+        0.425,
+        6.70062
+      ],
+      "source_rect": [
+        688.3199999999999,
+        469.16,
+        831.6800000000001,
+        476.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-outer-lintel-2",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.28625,
+        2.249,
+        6.58063
+      ],
+      "max": [
+        10.52625,
+        2.7,
+        6.70062
+      ],
+      "source_rect": [
+        688.3199999999999,
+        469.16,
+        831.6800000000001,
+        476.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-outer-jamb-3",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        10.52625,
+        0,
+        6.58063
+      ],
+      "max": [
+        10.58875,
+        2.7,
+        6.70062
+      ],
+      "source_rect": [
+        831.6800000000001,
+        469.16,
+        835.6800000000001,
+        476.84
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-left-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        8.215,
+        0,
+        6.04688
+      ],
+      "max": [
+        8.295,
+        2.7,
+        6.64062
+      ],
+      "source_rect": [
+        683.76,
+        435,
+        688.8799999999999,
+        473
+      ],
+      "note": ""
+    },
+    {
+      "id": "W-bay-master-bottom-right-jamb-0",
+      "kind": "wall",
+      "layer": "architecture",
+      "min": [
+        10.5175,
+        0,
+        6.04688
+      ],
+      "max": [
+        10.5975,
+        2.7,
+        6.64062
+      ],
+      "source_rect": [
+        831.1200000000001,
+        435,
+        836.24,
+        473
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-balcony-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        0.165,
+        0.16,
+        0.06625
+      ],
+      "max": [
+        0.205,
+        2.45,
+        0.12125
+      ],
+      "source_rect": [
+        168.56,
+        52.24,
+        171.12,
+        55.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-balcony-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        3.17,
+        0.16,
+        0.06625
+      ],
+      "max": [
+        3.21,
+        2.45,
+        0.12125
+      ],
+      "source_rect": [
+        360.88,
+        52.24,
+        363.44,
+        55.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-balcony-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        0.165,
+        2.41,
+        0.06625
+      ],
+      "max": [
+        3.21,
+        2.45,
+        0.12125
+      ],
+      "source_rect": [
+        168.56,
+        52.24,
+        363.44,
+        55.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-balcony-frame-sill",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        0.165,
+        0.16,
+        0.06625
+      ],
+      "max": [
+        3.21,
+        0.2,
+        0.12125
+      ],
+      "source_rect": [
+        168.56,
+        52.24,
+        363.44,
+        55.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-balcony-mullion",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.6675,
+        0.16,
+        0.06625
+      ],
+      "max": [
+        1.7075,
+        2.45,
+        0.12125
+      ],
+      "source_rect": [
+        264.72,
+        52.24,
+        267.28,
+        55.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-balcony-glass-a",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        0.205,
+        0.2,
+        0.06625
+      ],
+      "max": [
+        1.6675,
+        2.41,
+        0.12125
+      ],
+      "source_rect": [
+        171.12,
+        52.24,
+        264.72,
+        55.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-balcony-glass-b",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        1.7075,
+        0.2,
+        0.06625
+      ],
+      "max": [
+        3.17,
+        2.41,
+        0.12125
+      ],
+      "source_rect": [
+        267.28,
+        52.24,
+        360.88,
+        55.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-balcony-guardrail",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        0.165,
+        1.065,
+        0.06625
+      ],
+      "max": [
+        3.21,
+        1.115,
+        0.12125
+      ],
+      "source_rect": [
+        168.56,
+        52.24,
+        363.44,
+        55.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-balcony-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        0.73625,
+        0,
+        1.92563
+      ],
+      "max": [
+        0.77625,
+        2.353,
+        1.98062
+      ],
+      "source_rect": [
+        205.12,
+        171.24,
+        207.68,
+        174.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-balcony-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        2.78625,
+        0,
+        1.92563
+      ],
+      "max": [
+        2.82625,
+        2.353,
+        1.98062
+      ],
+      "source_rect": [
+        336.32,
+        171.24,
+        338.88,
+        174.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-balcony-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        0.73625,
+        2.313,
+        1.92563
+      ],
+      "max": [
+        2.82625,
+        2.353,
+        1.98062
+      ],
+      "source_rect": [
+        205.12,
+        171.24,
+        338.88,
+        174.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-balcony-frame-sill",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        0.73625,
+        0,
+        1.92563
+      ],
+      "max": [
+        2.82625,
+        0.04,
+        1.98062
+      ],
+      "source_rect": [
+        205.12,
+        171.24,
+        338.88,
+        174.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-balcony-mullion",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.76125,
+        0,
+        1.92563
+      ],
+      "max": [
+        1.80125,
+        2.353,
+        1.98062
+      ],
+      "source_rect": [
+        270.72,
+        171.24,
+        273.28,
+        174.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-balcony-glass-a",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        0.77625,
+        0.04,
+        1.92563
+      ],
+      "max": [
+        1.76125,
+        2.313,
+        1.98062
+      ],
+      "source_rect": [
+        207.68,
+        171.24,
+        270.72,
+        174.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-balcony-glass-b",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        1.80125,
+        0.04,
+        1.92563
+      ],
+      "max": [
+        2.78625,
+        2.313,
+        1.98062
+      ],
+      "source_rect": [
+        273.28,
+        171.24,
+        336.32,
+        174.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-entry-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        0.57375,
+        0,
+        9.95688
+      ],
+      "max": [
+        0.61375,
+        2.28,
+        10.01187
+      ],
+      "source_rect": [
+        194.72,
+        685.24,
+        197.28,
+        688.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-entry-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.57375,
+        0,
+        9.95688
+      ],
+      "max": [
+        1.61375,
+        2.28,
+        10.01187
+      ],
+      "source_rect": [
+        258.71999999999997,
+        685.24,
+        261.28,
+        688.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-entry-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        0.57375,
+        2.2399999999999998,
+        9.95688
+      ],
+      "max": [
+        1.61375,
+        2.28,
+        10.01187
+      ],
+      "source_rect": [
+        194.72,
+        685.24,
+        261.28,
+        688.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-east-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.69125,
+        0,
+        7.86562
+      ],
+      "max": [
+        1.74625,
+        2.28,
+        7.90562
+      ],
+      "source_rect": [
+        266.24,
+        551.4,
+        269.76,
+        553.9599999999999
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-east-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.69125,
+        0,
+        9.87563
+      ],
+      "max": [
+        1.74625,
+        2.28,
+        9.91563
+      ],
+      "source_rect": [
+        266.24,
+        680.0400000000001,
+        269.76,
+        682.6
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-east-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.69125,
+        2.2399999999999998,
+        7.86562
+      ],
+      "max": [
+        1.74625,
+        2.28,
+        9.91563
+      ],
+      "source_rect": [
+        266.24,
+        551.4,
+        269.76,
+        682.6
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-east-frame-sill",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.69125,
+        0,
+        7.86562
+      ],
+      "max": [
+        1.74625,
+        0.04,
+        9.91563
+      ],
+      "source_rect": [
+        266.24,
+        551.4,
+        269.76,
+        682.6
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-east-mullion",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.69125,
+        0,
+        8.87063
+      ],
+      "max": [
+        1.74625,
+        2.28,
+        8.91062
+      ],
+      "source_rect": [
+        266.24,
+        615.72,
+        269.76,
+        618.28
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-east-glass-a",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        1.69125,
+        0.04,
+        7.90562
+      ],
+      "max": [
+        1.74625,
+        2.2399999999999998,
+        8.87063
+      ],
+      "source_rect": [
+        266.24,
+        553.9599999999999,
+        269.76,
+        615.72
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-east-glass-b",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        1.69125,
+        0.04,
+        8.91062
+      ],
+      "max": [
+        1.74625,
+        2.2399999999999998,
+        9.87563
+      ],
+      "source_rect": [
+        266.24,
+        618.28,
+        269.76,
+        680.0400000000001
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-north-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.77531,
+        0,
+        7.81625
+      ],
+      "max": [
+        1.81531,
+        2.28,
+        7.87125
+      ],
+      "source_rect": [
+        271.62,
+        548.24,
+        274.18,
+        551.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-north-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        3.07531,
+        0,
+        7.81625
+      ],
+      "max": [
+        3.11531,
+        2.28,
+        7.87125
+      ],
+      "source_rect": [
+        354.82,
+        548.24,
+        357.38,
+        551.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-north-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.77531,
+        2.2399999999999998,
+        7.81625
+      ],
+      "max": [
+        3.11531,
+        2.28,
+        7.87125
+      ],
+      "source_rect": [
+        271.62,
+        548.24,
+        357.38,
+        551.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-north-frame-sill",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        1.77531,
+        0,
+        7.81625
+      ],
+      "max": [
+        3.11531,
+        0.04,
+        7.87125
+      ],
+      "source_rect": [
+        271.62,
+        548.24,
+        357.38,
+        551.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-north-mullion",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        2.42531,
+        0,
+        7.81625
+      ],
+      "max": [
+        2.46531,
+        2.28,
+        7.87125
+      ],
+      "source_rect": [
+        313.22,
+        548.24,
+        315.78,
+        551.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-north-glass-a",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        1.81531,
+        0.04,
+        7.81625
+      ],
+      "max": [
+        2.42531,
+        2.2399999999999998,
+        7.87125
+      ],
+      "source_rect": [
+        274.18,
+        548.24,
+        313.22,
+        551.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "G-kitchen-north-glass-b",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        2.46531,
+        0.04,
+        7.81625
+      ],
+      "max": [
+        3.07531,
+        2.2399999999999998,
+        7.87125
+      ],
+      "source_rect": [
+        315.78,
+        548.24,
+        354.82,
+        551.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-service-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        3.595,
+        0,
+        6.01938
+      ],
+      "max": [
+        3.635,
+        2.28,
+        6.07437
+      ],
+      "source_rect": [
+        388.08,
+        433.24,
+        390.64,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-service-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        4.365,
+        0,
+        6.01938
+      ],
+      "max": [
+        4.405,
+        2.28,
+        6.07437
+      ],
+      "source_rect": [
+        437.36,
+        433.24,
+        439.92,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-service-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        3.595,
+        2.2399999999999998,
+        6.01938
+      ],
+      "max": [
+        4.405,
+        2.28,
+        6.07437
+      ],
+      "source_rect": [
+        388.08,
+        433.24,
+        439.92,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-corridor-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.11375,
+        0.405,
+        6.01938
+      ],
+      "max": [
+        6.15375,
+        1.235,
+        6.07437
+      ],
+      "source_rect": [
+        549.28,
+        433.24,
+        551.8399999999999,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-corridor-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.78375,
+        0.405,
+        6.01938
+      ],
+      "max": [
+        6.82375,
+        1.235,
+        6.07437
+      ],
+      "source_rect": [
+        592.1600000000001,
+        433.24,
+        594.72,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-corridor-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.11375,
+        1.195,
+        6.01938
+      ],
+      "max": [
+        6.82375,
+        1.235,
+        6.07437
+      ],
+      "source_rect": [
+        549.28,
+        433.24,
+        594.72,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-corridor-frame-sill",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.11375,
+        0.405,
+        6.01938
+      ],
+      "max": [
+        6.82375,
+        0.445,
+        6.07437
+      ],
+      "source_rect": [
+        549.28,
+        433.24,
+        594.72,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-corridor-mullion",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.44875,
+        0.405,
+        6.01938
+      ],
+      "max": [
+        6.48875,
+        1.235,
+        6.07437
+      ],
+      "source_rect": [
+        570.72,
+        433.24,
+        573.28,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-corridor-glass-a",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        6.15375,
+        0.445,
+        6.01938
+      ],
+      "max": [
+        6.44875,
+        1.195,
+        6.07437
+      ],
+      "source_rect": [
+        551.8399999999999,
+        433.24,
+        570.72,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-corridor-glass-b",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        6.48875,
+        0.445,
+        6.01938
+      ],
+      "max": [
+        6.78375,
+        1.195,
+        6.07437
+      ],
+      "source_rect": [
+        573.28,
+        433.24,
+        592.1600000000001,
+        436.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-bedroom1-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        4.54,
+        0,
+        4.83188
+      ],
+      "max": [
+        4.58,
+        2.28,
+        4.88687
+      ],
+      "source_rect": [
+        448.56,
+        357.24,
+        451.12,
+        360.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-bedroom1-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        5.42,
+        0,
+        4.83188
+      ],
+      "max": [
+        5.46,
+        2.28,
+        4.88687
+      ],
+      "source_rect": [
+        504.88,
+        357.24,
+        507.44,
+        360.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-bedroom1-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        4.54,
+        2.2399999999999998,
+        4.83188
+      ],
+      "max": [
+        5.46,
+        2.28,
+        4.88687
+      ],
+      "source_rect": [
+        448.56,
+        357.24,
+        507.44,
+        360.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-bedroom2-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        5.90719,
+        0,
+        4.83188
+      ],
+      "max": [
+        5.94719,
+        2.28,
+        4.88687
+      ],
+      "source_rect": [
+        536.06,
+        357.24,
+        538.6199999999999,
+        360.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-bedroom2-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.78719,
+        0,
+        4.83188
+      ],
+      "max": [
+        6.82719,
+        2.28,
+        4.88687
+      ],
+      "source_rect": [
+        592.3800000000001,
+        357.24,
+        594.94,
+        360.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-bedroom2-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        5.90719,
+        2.2399999999999998,
+        4.83188
+      ],
+      "max": [
+        6.82719,
+        2.28,
+        4.88687
+      ],
+      "source_rect": [
+        536.06,
+        357.24,
+        594.94,
+        360.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-master-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.9725,
+        0,
+        5.00875
+      ],
+      "max": [
+        7.0275,
+        2.28,
+        5.04875
+      ],
+      "source_rect": [
+        604.24,
+        368.56,
+        607.76,
+        371.12
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-master-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.9725,
+        0,
+        5.88875
+      ],
+      "max": [
+        7.0275,
+        2.28,
+        5.92875
+      ],
+      "source_rect": [
+        604.24,
+        424.88,
+        607.76,
+        427.44
+      ],
+      "note": ""
+    },
+    {
+      "id": "D-master-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.9725,
+        2.2399999999999998,
+        5.00875
+      ],
+      "max": [
+        7.0275,
+        2.28,
+        5.92875
+      ],
+      "source_rect": [
+        604.24,
+        368.56,
+        607.76,
+        427.44
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom1-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        3.97375,
+        0.425,
+        1.69125
+      ],
+      "max": [
+        4.01375,
+        2.245,
+        1.74625
+      ],
+      "source_rect": [
+        412.32,
+        156.24,
+        414.88,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom1-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        5.42375,
+        0.425,
+        1.69125
+      ],
+      "max": [
+        5.46375,
+        2.245,
+        1.74625
+      ],
+      "source_rect": [
+        505.12,
+        156.24,
+        507.68,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom1-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        3.97375,
+        2.205,
+        1.69125
+      ],
+      "max": [
+        5.46375,
+        2.245,
+        1.74625
+      ],
+      "source_rect": [
+        412.32,
+        156.24,
+        507.68,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom1-frame-sill",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        3.97375,
+        0.425,
+        1.69125
+      ],
+      "max": [
+        5.46375,
+        0.46499999999999997,
+        1.74625
+      ],
+      "source_rect": [
+        412.32,
+        156.24,
+        507.68,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom1-mullion",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        4.69875,
+        0.425,
+        1.69125
+      ],
+      "max": [
+        4.73875,
+        2.245,
+        1.74625
+      ],
+      "source_rect": [
+        458.72,
+        156.24,
+        461.28,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom1-glass-a",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        4.01375,
+        0.46499999999999997,
+        1.69125
+      ],
+      "max": [
+        4.69875,
+        2.205,
+        1.74625
+      ],
+      "source_rect": [
+        414.88,
+        156.24,
+        458.72,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom1-glass-b",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        4.73875,
+        0.46499999999999997,
+        1.69125
+      ],
+      "max": [
+        5.42375,
+        2.205,
+        1.74625
+      ],
+      "source_rect": [
+        461.28,
+        156.24,
+        505.12,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom2-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        5.76969,
+        0.425,
+        1.69125
+      ],
+      "max": [
+        5.80969,
+        2.251,
+        1.74625
+      ],
+      "source_rect": [
+        527.26,
+        156.24,
+        529.8199999999999,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom2-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        7.92469,
+        0.425,
+        1.69125
+      ],
+      "max": [
+        7.96469,
+        2.251,
+        1.74625
+      ],
+      "source_rect": [
+        665.1800000000001,
+        156.24,
+        667.74,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom2-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        5.76969,
+        2.211,
+        1.69125
+      ],
+      "max": [
+        7.96469,
+        2.251,
+        1.74625
+      ],
+      "source_rect": [
+        527.26,
+        156.24,
+        667.74,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom2-frame-sill",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        5.76969,
+        0.425,
+        1.69125
+      ],
+      "max": [
+        7.96469,
+        0.46499999999999997,
+        1.74625
+      ],
+      "source_rect": [
+        527.26,
+        156.24,
+        667.74,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom2-mullion",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        6.84719,
+        0.425,
+        1.69125
+      ],
+      "max": [
+        6.88719,
+        2.251,
+        1.74625
+      ],
+      "source_rect": [
+        596.22,
+        156.24,
+        598.78,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom2-glass-a",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        5.80969,
+        0.46499999999999997,
+        1.69125
+      ],
+      "max": [
+        6.84719,
+        2.211,
+        1.74625
+      ],
+      "source_rect": [
+        529.8199999999999,
+        156.24,
+        596.22,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-bedroom2-glass-b",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        6.88719,
+        0.46499999999999997,
+        1.69125
+      ],
+      "max": [
+        7.92469,
+        2.211,
+        1.74625
+      ],
+      "source_rect": [
+        598.78,
+        156.24,
+        665.1800000000001,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-top-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        8.49875,
+        0.435,
+        1.69125
+      ],
+      "max": [
+        8.53875,
+        2.251,
+        1.74625
+      ],
+      "source_rect": [
+        701.92,
+        156.24,
+        704.4799999999999,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-top-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        10.39875,
+        0.435,
+        1.69125
+      ],
+      "max": [
+        10.43875,
+        2.251,
+        1.74625
+      ],
+      "source_rect": [
+        823.5200000000001,
+        156.24,
+        826.08,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-top-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        8.49875,
+        2.211,
+        1.69125
+      ],
+      "max": [
+        10.43875,
+        2.251,
+        1.74625
+      ],
+      "source_rect": [
+        701.92,
+        156.24,
+        826.08,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-top-frame-sill",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        8.49875,
+        0.435,
+        1.69125
+      ],
+      "max": [
+        10.43875,
+        0.475,
+        1.74625
+      ],
+      "source_rect": [
+        701.92,
+        156.24,
+        826.08,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-top-mullion",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        9.44875,
+        0.435,
+        1.69125
+      ],
+      "max": [
+        9.48875,
+        2.251,
+        1.74625
+      ],
+      "source_rect": [
+        762.72,
+        156.24,
+        765.28,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-top-glass-a",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        8.53875,
+        0.475,
+        1.69125
+      ],
+      "max": [
+        9.44875,
+        2.211,
+        1.74625
+      ],
+      "source_rect": [
+        704.4799999999999,
+        156.24,
+        762.72,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-top-glass-b",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        9.48875,
+        0.475,
+        1.69125
+      ],
+      "max": [
+        10.39875,
+        2.211,
+        1.74625
+      ],
+      "source_rect": [
+        765.28,
+        156.24,
+        823.5200000000001,
+        159.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-bottom-frame-a",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        8.28625,
+        0.425,
+        6.61313
+      ],
+      "max": [
+        8.32625,
+        2.249,
+        6.66812
+      ],
+      "source_rect": [
+        688.3199999999999,
+        471.24,
+        690.8799999999999,
+        474.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-bottom-frame-b",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        10.48625,
+        0.425,
+        6.61313
+      ],
+      "max": [
+        10.52625,
+        2.249,
+        6.66812
+      ],
+      "source_rect": [
+        829.1200000000001,
+        471.24,
+        831.6800000000001,
+        474.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-bottom-frame-head",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        8.28625,
+        2.209,
+        6.61313
+      ],
+      "max": [
+        10.52625,
+        2.249,
+        6.66812
+      ],
+      "source_rect": [
+        688.3199999999999,
+        471.24,
+        831.6800000000001,
+        474.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-bottom-frame-sill",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        8.28625,
+        0.425,
+        6.61313
+      ],
+      "max": [
+        10.52625,
+        0.46499999999999997,
+        6.66812
+      ],
+      "source_rect": [
+        688.3199999999999,
+        471.24,
+        831.6800000000001,
+        474.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-bottom-mullion",
+      "kind": "frame",
+      "layer": "openings",
+      "min": [
+        9.38625,
+        0.425,
+        6.61313
+      ],
+      "max": [
+        9.42625,
+        2.249,
+        6.66812
+      ],
+      "source_rect": [
+        758.72,
+        471.24,
+        761.28,
+        474.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-bottom-glass-a",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        8.32625,
+        0.46499999999999997,
+        6.61313
+      ],
+      "max": [
+        9.38625,
+        2.209,
+        6.66812
+      ],
+      "source_rect": [
+        690.8799999999999,
+        471.24,
+        758.72,
+        474.76
+      ],
+      "note": ""
+    },
+    {
+      "id": "WIN-bay-master-bottom-glass-b",
+      "kind": "glass",
+      "layer": "openings",
+      "min": [
+        9.42625,
+        0.46499999999999997,
+        6.61313
+      ],
+      "max": [
+        10.48625,
+        2.209,
+        6.66812
+      ],
+      "source_rect": [
+        761.28,
+        471.24,
+        829.1200000000001,
+        474.76
+      ],
+      "note": ""
+    }
+  ],
+  "openings": [
+    {
+      "id": "WIN-balcony",
+      "center": 266,
+      "width": 3.045,
+      "sill": 0.16,
+      "head": 2.45,
+      "kind": "window",
+      "photo": "165313 / 165315",
+      "evidence": "照片；高度暂定",
+      "wall": "W-balcony-front",
+      "axis": "x",
+      "plane": 54,
+      "from_px": 168.56,
+      "to_px": 363.44,
+      "thickness": 0.16
+    },
+    {
+      "id": "D-balcony",
+      "center": 272,
+      "width": 2.09,
+      "sill": 0,
+      "head": 2.353,
+      "kind": "sliding",
+      "evidence": "图纸门宽2090、门高2353",
+      "rooms": [
+        "living",
+        "balcony"
+      ],
+      "wall": "W-balcony-living",
+      "axis": "x",
+      "plane": 173,
+      "from_px": 205.12,
+      "to_px": 338.88,
+      "thickness": 0.2
+    },
+    {
+      "id": "P-west",
+      "center": 462,
+      "width": 1.22,
+      "sill": 0,
+      "head": 2.28,
+      "kind": "portal",
+      "evidence": "图纸1220；去向及高度待核实",
+      "rooms": [
+        "living",
+        "unmeasured-west"
+      ],
+      "wall": "W-west-portal",
+      "axis": "z",
+      "plane": 187,
+      "from_px": 422.96,
+      "to_px": 501.04,
+      "thickness": 0.16
+    },
+    {
+      "id": "D-entry",
+      "center": 228,
+      "width": 1.04,
+      "sill": 0,
+      "head": 2.28,
+      "kind": "door",
+      "evidence": "入口位置参考手绘图；门高及开启暂定",
+      "rooms": [
+        "entry",
+        "outside"
+      ],
+      "hinge": "start",
+      "swing": -1,
+      "wall": "W-entry-south",
+      "axis": "x",
+      "plane": 687,
+      "from_px": 194.72,
+      "to_px": 261.28,
+      "thickness": 0.18
+    },
+    {
+      "id": "G-kitchen-east",
+      "center": 617,
+      "width": 2.05,
+      "sill": 0,
+      "head": 2.28,
+      "kind": "interior-glazing",
+      "evidence": "平面2050与现场L形玻璃隔断；高暂定",
+      "rooms": [
+        "entry",
+        "unmeasured-kitchen"
+      ],
+      "wall": "W-kitchen-east",
+      "axis": "z",
+      "plane": 268,
+      "from_px": 551.4,
+      "to_px": 682.6,
+      "thickness": 0.14
+    },
+    {
+      "id": "G-kitchen-north",
+      "center": 314.5,
+      "width": 1.34,
+      "sill": 0,
+      "head": 2.28,
+      "kind": "interior-glazing",
+      "evidence": "图纸1340；现场L形玻璃隔断",
+      "rooms": [
+        "living",
+        "unmeasured-kitchen"
+      ],
+      "wall": "W-kitchen-north",
+      "axis": "x",
+      "plane": 550,
+      "from_px": 271.62,
+      "to_px": 357.38,
+      "thickness": 0.14
+    },
+    {
+      "id": "D-service",
+      "center": 414,
+      "width": 0.81,
+      "sill": 0,
+      "head": 2.28,
+      "kind": "door",
+      "evidence": "图纸810；房间内部未绘",
+      "rooms": [
+        "corridor",
+        "unmeasured-service"
+      ],
+      "hinge": "start",
+      "swing": 1,
+      "wall": "W-corridor-south",
+      "axis": "x",
+      "plane": 435,
+      "from_px": 388.08,
+      "to_px": 439.92,
+      "thickness": 0.16
+    },
+    {
+      "id": "WIN-corridor",
+      "center": 572,
+      "width": 0.71,
+      "sill": 0.405,
+      "head": 1.235,
+      "kind": "interior-glazing",
+      "evidence": "手绘W710/H405/H窗830；去向待核实",
+      "wall": "W-corridor-south",
+      "axis": "x",
+      "plane": 435,
+      "from_px": 549.28,
+      "to_px": 594.72,
+      "thickness": 0.16
+    },
+    {
+      "id": "D-bedroom1",
+      "center": 478,
+      "width": 0.92,
+      "sill": 0,
+      "head": 2.28,
+      "kind": "door",
+      "evidence": "图纸920；手绘H2280",
+      "rooms": [
+        "corridor",
+        "bedroom1"
+      ],
+      "hinge": "end",
+      "swing": 1,
+      "wall": "W-bedroom1-south",
+      "axis": "x",
+      "plane": 359,
+      "from_px": 448.56,
+      "to_px": 507.44,
+      "thickness": 0.16
+    },
+    {
+      "id": "D-bedroom2",
+      "center": 565.5,
+      "width": 0.92,
+      "sill": 0,
+      "head": 2.28,
+      "kind": "door",
+      "evidence": "图纸920；高暂定",
+      "rooms": [
+        "corridor",
+        "bedroom2"
+      ],
+      "hinge": "start",
+      "swing": -1,
+      "wall": "W-bedroom2-south",
+      "axis": "x",
+      "plane": 359,
+      "from_px": 536.06,
+      "to_px": 594.94,
+      "thickness": 0.16
+    },
+    {
+      "id": "D-master",
+      "center": 398,
+      "width": 0.92,
+      "sill": 0,
+      "head": 2.28,
+      "kind": "door",
+      "evidence": "图纸920；高暂定",
+      "rooms": [
+        "corridor",
+        "master"
+      ],
+      "hinge": "end",
+      "swing": 1,
+      "wall": "W-master-door",
+      "axis": "z",
+      "plane": 606,
+      "from_px": 368.56,
+      "to_px": 427.44,
+      "thickness": 0.16
+    },
+    {
+      "id": "BAY-bay-bedroom1",
+      "center": 438.5,
+      "width": 2.09,
+      "sill": 0.425,
+      "head": 2.245,
+      "kind": "bay-aperture",
+      "evidence": "窗台及窗高按图纸，进深由截图推算",
+      "wall": "W-bay-bedroom1-room",
+      "axis": "x",
+      "plane": 201,
+      "from_px": 371.62,
+      "to_px": 505.38,
+      "thickness": 0.18
+    },
+    {
+      "id": "WIN-bay-bedroom1",
+      "center": 460.0,
+      "width": 1.49,
+      "sill": 0.425,
+      "head": 2.245,
+      "kind": "window",
+      "evidence": "图纸窗宽/台上/台下",
+      "wall": "W-bay-bedroom1-outer",
+      "axis": "x",
+      "plane": 158,
+      "from_px": 412.32,
+      "to_px": 507.68,
+      "thickness": 0.12
+    },
+    {
+      "id": "BAY-bay-bedroom2",
+      "center": 597.5,
+      "width": 2.195,
+      "sill": 0.425,
+      "head": 2.251,
+      "kind": "bay-aperture",
+      "evidence": "窗台及窗高按图纸，进深由截图推算",
+      "wall": "W-bay-bedroom2-room",
+      "axis": "x",
+      "plane": 201,
+      "from_px": 527.26,
+      "to_px": 667.74,
+      "thickness": 0.18
+    },
+    {
+      "id": "WIN-bay-bedroom2",
+      "center": 597.5,
+      "width": 2.195,
+      "sill": 0.425,
+      "head": 2.251,
+      "kind": "window",
+      "evidence": "图纸窗宽/台上/台下",
+      "wall": "W-bay-bedroom2-outer",
+      "axis": "x",
+      "plane": 158,
+      "from_px": 527.26,
+      "to_px": 667.74,
+      "thickness": 0.12
+    },
+    {
+      "id": "BAY-bay-master-top",
+      "center": 764,
+      "width": 1.94,
+      "sill": 0.435,
+      "head": 2.251,
+      "kind": "bay-aperture",
+      "evidence": "窗台及窗高按图纸，进深由截图推算",
+      "wall": "W-bay-master-top-room",
+      "axis": "x",
+      "plane": 201,
+      "from_px": 701.92,
+      "to_px": 826.08,
+      "thickness": 0.18
+    },
+    {
+      "id": "WIN-bay-master-top",
+      "center": 764,
+      "width": 1.94,
+      "sill": 0.435,
+      "head": 2.251,
+      "kind": "window",
+      "evidence": "图纸窗宽/台上/台下",
+      "wall": "W-bay-master-top-outer",
+      "axis": "x",
+      "plane": 158,
+      "from_px": 701.92,
+      "to_px": 826.08,
+      "thickness": 0.12
+    },
+    {
+      "id": "BAY-bay-master-bottom",
+      "center": 760,
+      "width": 2.24,
+      "sill": 0.425,
+      "head": 2.249,
+      "kind": "bay-aperture",
+      "evidence": "窗台及窗高按图纸，进深由截图推算",
+      "wall": "W-bay-master-bottom-room",
+      "axis": "x",
+      "plane": 435,
+      "from_px": 688.3199999999999,
+      "to_px": 831.6800000000001,
+      "thickness": 0.18
+    },
+    {
+      "id": "WIN-bay-master-bottom",
+      "center": 760,
+      "width": 2.24,
+      "sill": 0.425,
+      "head": 2.249,
+      "kind": "window",
+      "evidence": "图纸窗宽/台上/台下",
+      "wall": "W-bay-master-bottom-outer",
+      "axis": "x",
+      "plane": 473,
+      "from_px": 688.3199999999999,
+      "to_px": 831.6800000000001,
+      "thickness": 0.12
+    }
+  ],
+  "doors": [
+    {
+      "id": "D-entry",
+      "axis": "x",
+      "hinge": [
+        0.57375,
+        9.98438
+      ],
+      "width": 0.9600000000000001,
+      "height": 2.2449999999999997,
+      "hinge_end": "start",
+      "swing": -1,
+      "rooms": [
+        "entry",
+        "outside"
+      ]
+    },
+    {
+      "id": "D-service",
+      "axis": "x",
+      "hinge": [
+        3.595,
+        6.04688
+      ],
+      "width": 0.7300000000000001,
+      "height": 2.2449999999999997,
+      "hinge_end": "start",
+      "swing": 1,
+      "rooms": [
+        "corridor",
+        "unmeasured-service"
+      ]
+    },
+    {
+      "id": "D-bedroom1",
+      "axis": "x",
+      "hinge": [
+        5.46,
+        4.85938
+      ],
+      "width": 0.8400000000000001,
+      "height": 2.2449999999999997,
+      "hinge_end": "end",
+      "swing": 1,
+      "rooms": [
+        "corridor",
+        "bedroom1"
+      ]
+    },
+    {
+      "id": "D-bedroom2",
+      "axis": "x",
+      "hinge": [
+        5.90719,
+        4.85938
+      ],
+      "width": 0.8400000000000001,
+      "height": 2.2449999999999997,
+      "hinge_end": "start",
+      "swing": -1,
+      "rooms": [
+        "corridor",
+        "bedroom2"
+      ]
+    },
+    {
+      "id": "D-master",
+      "axis": "z",
+      "hinge": [
+        7.0,
+        5.92875
+      ],
+      "width": 0.8400000000000001,
+      "height": 2.2449999999999997,
+      "hinge_end": "end",
+      "swing": 1,
+      "rooms": [
+        "corridor",
+        "master"
+      ]
+    }
+  ],
+  "footprint": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      3.375,
+      0.0
+    ],
+    [
+      3.375,
+      2.29688
+    ],
+    [
+      10.73438,
+      2.29688
+    ],
+    [
+      10.73438,
+      6.14062
+    ],
+    [
+      3.28125,
+      6.14062
+    ],
+    [
+      3.28125,
+      7.9375
+    ],
+    [
+      1.82812,
+      7.9375
+    ],
+    [
+      1.82812,
+      10.07812
+    ],
+    [
+      0.375,
+      10.07812
+    ],
+    [
+      0.375,
+      8.29688
+    ],
+    [
+      -0.32812,
+      8.29688
+    ],
+    [
+      -0.32812,
+      7.07812
+    ],
+    [
+      0.35938,
+      7.07812
+    ],
+    [
+      0.35938,
+      5.85938
+    ],
+    [
+      0.0,
+      5.85938
+    ]
+  ],
+  "footprint_px": [
+    [
+      158,
+      48
+    ],
+    [
+      374,
+      48
+    ],
+    [
+      374,
+      195
+    ],
+    [
+      845,
+      195
+    ],
+    [
+      845,
+      441
+    ],
+    [
+      368,
+      441
+    ],
+    [
+      368,
+      556
+    ],
+    [
+      275,
+      556
+    ],
+    [
+      275,
+      693
+    ],
+    [
+      182,
+      693
+    ],
+    [
+      182,
+      579
+    ],
+    [
+      137,
+      579
+    ],
+    [
+      137,
+      501
+    ],
+    [
+      181,
+      501
+    ],
+    [
+      181,
+      423
+    ],
+    [
+      158,
+      423
+    ]
+  ],
+  "bays": [
+    {
+      "id": "bay-bedroom1",
+      "x1": 358,
+      "x2": 519,
+      "roomz": 201,
+      "outerz": 158,
+      "width": 2.09,
+      "outerwidth": 1.49,
+      "outercenter": 460.0,
+      "sill": 0.425,
+      "gh": 1.82,
+      "footprint_px": [
+        [
+          367.62,
+          158
+        ],
+        [
+          509.38,
+          158
+        ],
+        [
+          509.38,
+          201
+        ],
+        [
+          367.62,
+          201
+        ]
+      ]
+    },
+    {
+      "id": "bay-bedroom2",
+      "x1": 519,
+      "x2": 676,
+      "roomz": 201,
+      "outerz": 158,
+      "width": 2.195,
+      "outerwidth": 2.195,
+      "outercenter": 597.5,
+      "sill": 0.425,
+      "gh": 1.826,
+      "footprint_px": [
+        [
+          523.26,
+          158
+        ],
+        [
+          671.74,
+          158
+        ],
+        [
+          671.74,
+          201
+        ],
+        [
+          523.26,
+          201
+        ]
+      ]
+    },
+    {
+      "id": "bay-master-top",
+      "x1": 676,
+      "x2": 839,
+      "roomz": 201,
+      "outerz": 158,
+      "width": 1.94,
+      "outerwidth": 1.94,
+      "outercenter": 764,
+      "sill": 0.435,
+      "gh": 1.816,
+      "footprint_px": [
+        [
+          697.92,
+          158
+        ],
+        [
+          830.08,
+          158
+        ],
+        [
+          830.08,
+          201
+        ],
+        [
+          697.92,
+          201
+        ]
+      ]
+    },
+    {
+      "id": "bay-master-bottom",
+      "x1": 606,
+      "x2": 839,
+      "roomz": 435,
+      "outerz": 473,
+      "width": 2.24,
+      "outerwidth": 2.24,
+      "outercenter": 760,
+      "sill": 0.425,
+      "gh": 1.824,
+      "footprint_px": [
+        [
+          684.3199999999999,
+          435
+        ],
+        [
+          835.6800000000001,
+          435
+        ],
+        [
+          835.6800000000001,
+          473
+        ],
+        [
+          684.3199999999999,
+          473
+        ]
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "living",
+      "name": "客餐厅",
+      "area_label": 23.22,
+      "center": [
+        1.84375,
+        4.42188
+      ],
+      "camera": [
+        1.98438,
+        7.17188
+      ],
+      "target": [
+        1.79688,
+        2.23438
+      ],
+      "note": "23.22㎡为原图标注，包含入户及走廊；非模型面积复算。"
+    },
+    {
+      "id": "balcony",
+      "name": "阳台",
+      "area_label": 5.22,
+      "center": [
+        1.6875,
+        0.92188
+      ],
+      "camera": [
+        1.84375,
+        1.46875
+      ],
+      "target": [
+        1.6875,
+        0.15625
+      ],
+      "note": "照片可见上部封窗、下部玻璃栏板；不按露台处理。"
+    },
+    {
+      "id": "bedroom1",
+      "name": "1号 · 大次卧",
+      "area_label": 5.44,
+      "center": [
+        4.375,
+        3.59375
+      ],
+      "camera": [
+        5.14062,
+        4.42188
+      ],
+      "target": [
+        4.25,
+        2.32812
+      ],
+      "note": "保留北侧飘窗；图纸顶部2090为窗洞相关尺寸，房间面积5.44㎡按原图。"
+    },
+    {
+      "id": "bedroom2",
+      "name": "2号 · 小次卧",
+      "area_label": 5.19,
+      "center": [
+        6.85938,
+        3.59375
+      ],
+      "camera": [
+        6.20312,
+        4.4375
+      ],
+      "target": [
+        7.03125,
+        2.34375
+      ],
+      "note": "保留北侧飘窗，图示净深2366、窗宽2195。"
+    },
+    {
+      "id": "master",
+      "name": "3号 · 主卧",
+      "area_label": 10.14,
+      "center": [
+        9.35938,
+        4.1875
+      ],
+      "camera": [
+        8.8125,
+        5.53125
+      ],
+      "target": [
+        9.71875,
+        2.40625
+      ],
+      "note": "L形入口与两处飘窗，北窗1940、南窗2240。"
+    },
+    {
+      "id": "entry",
+      "name": "入户",
+      "area_label": null,
+      "center": [
+        1.07812,
+        8.84375
+      ],
+      "camera": [
+        1.0625,
+        9.45312
+      ],
+      "target": [
+        1.85938,
+        5.89062
+      ],
+      "note": "保留通往厨房的L形玻璃边界；厨房内部不在本次测量图范围内。"
+    },
+    {
+      "id": "corridor",
+      "name": "走廊",
+      "area_label": null,
+      "center": [
+        5.14062,
+        5.48438
+      ],
+      "camera": [
+        3.5,
+        5.4375
+      ],
+      "target": [
+        7.14062,
+        5.4375
+      ],
+      "note": "连接三间卧室；南侧810门及局部内窗按图留口。"
+    }
+  ],
+  "assumptions": [
+    "本版为 BASE-v1 建筑白模，未经用户确认。没有任何室内设计层或家具。",
+    "平面横纵坐标按约64像素/米描图；门窗开口宽度优先采用图中文字。墙线和未闭合尺寸仍有约30–100mm级的不确定性，非施工测绘模型。",
+    "统一墙顶暂定2.70m，可在查看器调整；手绘中的2.50m等疑似吊顶净高不直接当作结构层高。未复刻装饰吊顶和灯槽。",
+    "阳台门宽2.090m、高2.353m为明确标注。卧室门宽0.920m；部分门高暂定2.28m，开启方向参考平面弧线。",
+    "飘窗台下高度按图采用0.425m，主卧北窗右侧采用0.435m；台上窗高1.816–1.826m。飘窗进深依截图估算约0.60–0.67m。",
+    "现场照片确认阳台玻璃封闭与下部栏板。封窗、护栏高度及分格无完整尺寸，暂定建模。阳台地面与室内齐平，门槛及高差待核实。",
+    "入户处L形玻璃按照片定义为厨房内隔断，不当作外窗。厨房、卫生间内部轮廓未在宜家图中完整提供，不凭照片推造。",
+    "图左下棕色柜体占位不作为墙体加入；当前边界仍依平面轮廓，柜后墙线、局部凹位及西侧开口去向待核实。",
+    "墙厚采用图线估算约0.14–0.22m，未判定承重性质。顶板厚0.12m、地板厚0.12m均暂定。",
+    "北向未知，查看器使用“图上方”而非地理北；光照为展示光，不代表真实日照。原图房间面积仅作为参考标签。",
+    "已查看28张照片的总览，并放大核对阳台、厨房边界、入户视线、卧室飘窗及现场手绘测量图；未逐段分析4个视频。"
+  ],
+  "design_layers": [],
+  "confirmed": false
+}

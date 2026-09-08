@@ -1,0 +1,40 @@
+{
+  "faces": [
+    {
+      "id": "MYM-fridge-appliance",
+      "face": 0.897
+    },
+    {
+      "id": "MYM-entry-shoes-门板0",
+      "face": 0.897
+    },
+    {
+      "id": "MYM-entry-shoes-门板1",
+      "face": 0.897
+    },
+    {
+      "id": "MYM-entry-console-base-门板0",
+      "face": 0.897
+    },
+    {
+      "id": "MYM-entry-console-base-门板1",
+      "face": 0.897
+    },
+    {
+      "id": "MYM-entry-console-upper-门板0",
+      "face": 0.897
+    },
+    {
+      "id": "MYM-entry-console-upper-门板1",
+      "face": 0.897
+    },
+    {
+      "id": "MYM-fridge-right-backdrop",
+      "face": 0.897
+    }
+  ],
+  "target": 0.897,
+  "door_faces_aligned": true,
+  "architecture_unchanged": true,
+  "retained_entry_parts": 50
+}

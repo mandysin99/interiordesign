@@ -1,0 +1,1751 @@
+{
+  "version": "BASE-v3",
+  "checks": [
+    {
+      "name": "original建筑坐标不变",
+      "passed": true
+    },
+    {
+      "name": "original书房门墙状态",
+      "passed": true
+    },
+    {
+      "name": "delivery建筑坐标不变",
+      "passed": true
+    },
+    {
+      "name": "delivery书房门墙状态",
+      "passed": true
+    },
+    {
+      "name": "phase1建筑坐标不变",
+      "passed": true
+    },
+    {
+      "name": "phase1书房门墙状态",
+      "passed": true
+    },
+    {
+      "name": "final建筑坐标不变",
+      "passed": true
+    },
+    {
+      "name": "final书房门墙状态",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-balcony-left-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-balcony-right-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-balcony-front-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-balcony-front-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-balcony-front-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-balcony-front-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-balcony-living-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-balcony-living-lintel-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-balcony-living-jamb-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-living-west-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-living-notch-north-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-west-portal-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-west-return-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-west-niche-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-west-return-south-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-entry-west-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-entry-south-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-entry-south-lintel-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-entry-south-jamb-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-east-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-east-lintel-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-east-jamb-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-north-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-north-lintel-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-north-jamb-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-living-east-lower-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-corridor-south-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-corridor-south-lintel-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-corridor-south-jamb-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-corridor-south-sill-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-corridor-south-lintel-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-corridor-south-jamb-5",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-exterior-east-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-exterior-east-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-exterior-east-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-exterior-east-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-kitchen-exterior-south-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bathroom-east-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bathroom-south-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bathroom-south-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bathroom-south-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bathroom-south-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bathroom-shower-divider-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bathroom-shower-divider-jamb-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bedroom1-west-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bedroom12-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bedroom23-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bedroom1-south-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bedroom1-south-lintel-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bedroom1-south-jamb-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bedroom2-south-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bedroom2-south-lintel-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bedroom2-south-jamb-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-master-neck-north-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-master-door-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-master-door-lintel-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-master-door-jamb-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-master-east-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-room-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-room-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-room-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-room-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 bay-bedroom1-platform",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-outer-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-outer-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-outer-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-outer-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-left-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom1-right-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-room-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-room-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-room-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-room-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 bay-bedroom2-platform",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-outer-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-outer-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-outer-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-outer-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-left-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-bedroom2-right-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-room-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-room-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-room-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-room-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 bay-master-top-platform",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-outer-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-outer-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-outer-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-outer-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-left-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-top-right-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-room-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-room-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-room-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-room-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 bay-master-bottom-platform",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-outer-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-outer-sill-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-outer-lintel-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-outer-jamb-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-left-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 W-bay-master-bottom-right-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 SLAB-main-structure-minus050",
+      "passed": true
+    },
+    {
+      "name": "正体积 SLAB-balcony-structure-minus130",
+      "passed": true
+    },
+    {
+      "name": "正体积 SLAB-bay-bedroom1",
+      "passed": true
+    },
+    {
+      "name": "正体积 SLAB-bay-bedroom2",
+      "passed": true
+    },
+    {
+      "name": "正体积 SLAB-bay-master-top",
+      "passed": true
+    },
+    {
+      "name": "正体积 SLAB-bay-master-bottom",
+      "passed": true
+    },
+    {
+      "name": "正体积 Roof-main",
+      "passed": true
+    },
+    {
+      "name": "正体积 Roof-bay-bedroom1",
+      "passed": true
+    },
+    {
+      "name": "正体积 Roof-bay-bedroom2",
+      "passed": true
+    },
+    {
+      "name": "正体积 Roof-bay-master-top",
+      "passed": true
+    },
+    {
+      "name": "正体积 Roof-bay-master-bottom",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-balcony-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-balcony-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-balcony-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-balcony-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-balcony-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-balcony-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-balcony-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-balcony-guardrail",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-balcony-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-balcony-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-balcony-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-balcony-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-balcony-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-balcony-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-balcony-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-entry-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-entry-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-entry-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-east-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-east-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-east-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-east-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-east-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-east-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-east-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-north-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-north-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-north-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-north-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-north-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-north-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-kitchen-north-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-service-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-service-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-service-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-corridor-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-corridor-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-corridor-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-corridor-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-corridor-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-corridor-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-corridor-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-kitchen-east-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-kitchen-east-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-kitchen-east-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-kitchen-east-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-kitchen-east-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-kitchen-east-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-kitchen-east-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bathroom-south-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bathroom-south-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bathroom-south-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bathroom-south-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bathroom-south-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bathroom-south-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bathroom-south-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-shower-divider-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-shower-divider-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-shower-divider-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-shower-divider-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-shower-divider-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-shower-divider-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 G-shower-divider-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-bedroom1-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-bedroom1-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-bedroom1-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-bedroom2-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-bedroom2-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-bedroom2-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-master-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-master-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-master-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom1-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom1-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom1-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom1-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom1-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom1-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom1-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom2-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom2-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom2-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom2-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom2-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom2-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-bedroom2-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-top-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-top-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-top-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-top-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-top-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-top-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-top-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-bottom-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-bottom-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-bottom-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-bottom-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-bottom-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-bottom-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 WIN-bay-master-bottom-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-entry-leaf",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-service-leaf",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-bedroom1-leaf",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-bedroom2-leaf",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-master-leaf",
+      "passed": true
+    },
+    {
+      "name": "正体积 SILL-bay-bedroom1",
+      "passed": true
+    },
+    {
+      "name": "正体积 SILL-bay-bedroom2",
+      "passed": true
+    },
+    {
+      "name": "正体积 SILL-bay-master-top",
+      "passed": true
+    },
+    {
+      "name": "正体积 SILL-bay-master-bottom",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-base-north",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-counter-north",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-upper-north",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-seam-north-1.85",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-seam-north-2.30",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-seam-north-2.75",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-base-south",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-counter-south",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-upper-south",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-seam-south-1.85",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-seam-south-2.30",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-seam-south-2.75",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-base-east",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-worktop-n",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-worktop-s",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-worktop-w",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-worktop-e",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-sink-bottom",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-sink-edge-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-sink-edge-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-sink-edge-c",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-sink-edge-d",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-tap",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-hob",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-hood",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-recess-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-gas-meter",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-gas-pipe",
+      "passed": true
+    },
+    {
+      "name": "正体积 B-vanity",
+      "passed": true
+    },
+    {
+      "name": "正体积 B-vanity-top",
+      "passed": true
+    },
+    {
+      "name": "正体积 B-basin",
+      "passed": true
+    },
+    {
+      "name": "正体积 B-mirror",
+      "passed": true
+    },
+    {
+      "name": "正体积 B-toilet-bowl",
+      "passed": true
+    },
+    {
+      "name": "正体积 B-toilet-tank",
+      "passed": true
+    },
+    {
+      "name": "正体积 B-shower-tray",
+      "passed": true
+    },
+    {
+      "name": "正体积 B-shower-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-soffit-living",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-grille-living",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-hatch-living",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-curtain-living",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-soffit-bedroom1",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-grille-bedroom1",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-hatch-bedroom1",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-curtain-bedroom1",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-soffit-bedroom2",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-grille-bedroom2",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-hatch-bedroom2",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-curtain-bedroom2",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-soffit-master",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-grille-master",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-hatch-master",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-curtain-master",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-soffit-balcony",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-panel-living",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-panel-bedroom1",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-panel-bedroom2",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-panel-master",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-panel-entry",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-hatch-entry",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-panel-corridor",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-hatch-corridor",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-panel-kitchen",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-hatch-kitchen",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-panel-bathroom",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-hatch-bathroom",
+      "passed": true
+    },
+    {
+      "name": "正体积 C-panel-balcony",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-open-north",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-open-south",
+      "passed": true
+    },
+    {
+      "name": "正体积 K-gas-service",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-1-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-1-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-1-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-1-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-entry-1-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-2-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-2-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-2-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-2-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-kitchen-2-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-3-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-3-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-3-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-3-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-kitchen-3-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-4-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bedroom1-4-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-4-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-4-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-kitchen-4-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-5-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bedroom1-5-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-5-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-5-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-6-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-6-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-6-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-6-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-7-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bedroom2-7-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-7-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-7-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-8-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bedroom2-8-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-8-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-8-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-9-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-master-9-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-master-9-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-9-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-10-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-master-10-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-master-10-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-10-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-11-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-11-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-11-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-11-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-balcony-pending",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-W-bedroom1-south-jamb-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-W-bedroom1-south-lintel-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-W-bedroom1-south-jamb-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-bedroom1-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-bedroom1-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-bedroom1-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 D-bedroom1-leaf",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-balcony-frame-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-balcony-frame-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-balcony-frame-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-balcony-frame-sill",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-balcony-mullion",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-balcony-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 REMOVE-ref-D-balcony-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-0-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-1-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-1-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-1-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-1-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-entry-1-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-2-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-2-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-2-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-2-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-kitchen-2-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-3-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-3-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-3-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-3-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-kitchen-3-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-4-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bedroom1-4-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-4-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-4-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-kitchen-4-4",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-5-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bedroom1-5-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-5-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-5-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-6-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-6-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-6-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-6-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-7-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bedroom2-7-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-7-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bathroom-7-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-8-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-bedroom2-8-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-corridor-8-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-8-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-9-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-master-9-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-master-9-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-9-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-10-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-master-10-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-master-10-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-10-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-11-0",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-11-1",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-11-2",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-living-11-3",
+      "passed": true
+    },
+    {
+      "name": "正体积 FIN-balcony-pending",
+      "passed": true
+    },
+    {
+      "name": "正体积 NEW-study-left",
+      "passed": true
+    },
+    {
+      "name": "正体积 NEW-study-right",
+      "passed": true
+    },
+    {
+      "name": "正体积 NEW-study-head",
+      "passed": true
+    },
+    {
+      "name": "正体积 NEW-study-glass-a",
+      "passed": true
+    },
+    {
+      "name": "正体积 NEW-study-glass-b",
+      "passed": true
+    },
+    {
+      "name": "正体积 NEW-study-rail",
+      "passed": true
+    },
+    {
+      "name": "正体积 NEW-balcony-envelope",
+      "passed": true
+    },
+    {
+      "name": "设施稳定ID唯一",
+      "passed": true
+    },
+    {
+      "name": "结构面80mm高差",
+      "passed": true
+    },
+    {
+      "name": "厨房柜间823mm暂值",
+      "passed": true
+    },
+    {
+      "name": "四层完整",
+      "passed": true
+    },
+    {
+      "name": "实改柜深",
+      "passed": true
+    },
+    {
+      "name": "卫生间完成面实体改变",
+      "passed": true
+    },
+    {
+      "name": "调整预览不改基准",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "照片体块非实测",
+    "未确认墙体可拆性",
+    "冰箱位置未确认",
+    "吊顶位置概括表达"
+  ]
+}

@@ -1,0 +1,802 @@
+[
+  {
+    "id": "SOFT-master-bed-frame",
+    "name": "横向床架",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      2,
+      0.16999999999999998,
+      1.5
+    ],
+    "layer": "design",
+    "room": "master",
+    "scheme": "SOFT-02",
+    "assetId": "master-bed-frame",
+    "position": [
+      9.46875,
+      0.205,
+      3.59375
+    ],
+    "scale": [
+      2,
+      0.16999999999999998,
+      1.5
+    ]
+  },
+  {
+    "id": "SOFT-master-bed-mattress",
+    "name": "主卧床垫",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      1.96875,
+      0.21000000000000002,
+      1.46875
+    ],
+    "layer": "design",
+    "room": "master",
+    "scheme": "SOFT-02",
+    "assetId": "master-bed-mattress",
+    "position": [
+      9.46875,
+      0.395,
+      3.59375
+    ],
+    "scale": [
+      1.96875,
+      0.21000000000000002,
+      1.46875
+    ]
+  },
+  {
+    "id": "SOFT-master-bed-head",
+    "name": "东侧实墙床头",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.0625,
+      0.85,
+      1.5
+    ],
+    "layer": "design",
+    "room": "master",
+    "scheme": "SOFT-02",
+    "assetId": "master-bed-head",
+    "position": [
+      10.5,
+      0.5449999999999999,
+      3.59375
+    ],
+    "scale": [
+      0.0625,
+      0.85,
+      1.5
+    ]
+  },
+  {
+    "id": "SOFT-master-bed-duvet",
+    "name": "主卧被褥",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      1.4375,
+      0.07999999999999996,
+      1.46875
+    ],
+    "layer": "design",
+    "room": "master",
+    "scheme": "SOFT-02",
+    "assetId": "master-bed-duvet",
+    "position": [
+      9.203125,
+      0.54,
+      3.59375
+    ],
+    "scale": [
+      1.4375,
+      0.07999999999999996,
+      1.46875
+    ]
+  },
+  {
+    "id": "SOFT-master-bed-throw",
+    "name": "主卧床尾织物",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.359375,
+      0.030000000000000027,
+      1.46875
+    ],
+    "layer": "design",
+    "room": "master",
+    "scheme": "SOFT-02",
+    "assetId": "master-bed-throw",
+    "position": [
+      8.7265625,
+      0.595,
+      3.59375
+    ],
+    "scale": [
+      0.359375,
+      0.030000000000000027,
+      1.46875
+    ]
+  },
+  {
+    "id": "SOFT-master-bed-pillow0",
+    "name": "主卧枕头",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.296875,
+      0.13,
+      0.59375
+    ],
+    "layer": "design",
+    "room": "master",
+    "scheme": "SOFT-02",
+    "assetId": "master-bed-pillow0",
+    "position": [
+      10.2578125,
+      0.565,
+      3.234375
+    ],
+    "scale": [
+      0.296875,
+      0.13,
+      0.59375
+    ]
+  },
+  {
+    "id": "SOFT-master-bed-pillow1",
+    "name": "主卧枕头",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.296875,
+      0.13,
+      0.59375
+    ],
+    "layer": "design",
+    "room": "master",
+    "scheme": "SOFT-02",
+    "assetId": "master-bed-pillow1",
+    "position": [
+      10.2578125,
+      0.565,
+      3.921875
+    ],
+    "scale": [
+      0.296875,
+      0.13,
+      0.59375
+    ]
+  },
+  {
+    "id": "SOFT-child-platform",
+    "name": "飘窗连续床台上板",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      2.15625,
+      0.03500000000000003,
+      1.203125
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-platform",
+    "position": [
+      6.875,
+      0.4425,
+      2.4609375
+    ],
+    "scale": [
+      2.15625,
+      0.03500000000000003,
+      1.203125
+    ]
+  },
+  {
+    "id": "SOFT-child-storage",
+    "name": "飘窗床前沿储物基座",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      2.15625,
+      0.39,
+      0.5625
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-storage",
+    "position": [
+      6.875,
+      0.22999999999999998,
+      2.78125
+    ],
+    "scale": [
+      2.15625,
+      0.39,
+      0.5625
+    ]
+  },
+  {
+    "id": "SOFT-child-front-joint1",
+    "name": "床台柜门分缝",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.0046874999999992895,
+      0.335,
+      0.0046874999999997335
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-front-joint1",
+    "position": [
+      6.33046875,
+      0.23750000000000002,
+      3.06171875
+    ],
+    "scale": [
+      0.0046874999999992895,
+      0.335,
+      0.0046874999999997335
+    ]
+  },
+  {
+    "id": "SOFT-child-front-joint2",
+    "name": "床台柜门分缝",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.0046874999999992895,
+      0.335,
+      0.0046874999999997335
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-front-joint2",
+    "position": [
+      6.86171875,
+      0.23750000000000002,
+      3.06171875
+    ],
+    "scale": [
+      0.0046874999999992895,
+      0.335,
+      0.0046874999999997335
+    ]
+  },
+  {
+    "id": "SOFT-child-front-joint3",
+    "name": "床台柜门分缝",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.0046874999999992895,
+      0.335,
+      0.0046874999999997335
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-front-joint3",
+    "position": [
+      7.39296875,
+      0.23750000000000002,
+      3.06171875
+    ],
+    "scale": [
+      0.0046874999999992895,
+      0.335,
+      0.0046874999999997335
+    ]
+  },
+  {
+    "id": "SOFT-child-bed-mattress",
+    "name": "横向飘窗床垫",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      2.125,
+      0.14999999999999997,
+      1.171875
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-bed-mattress",
+    "position": [
+      6.875,
+      0.535,
+      2.4609375
+    ],
+    "scale": [
+      2.125,
+      0.14999999999999997,
+      1.171875
+    ]
+  },
+  {
+    "id": "SOFT-child-bed-head",
+    "name": "飘窗床东端靠垫",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.078125,
+      0.25,
+      1
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-bed-head",
+    "position": [
+      7.8984375,
+      0.735,
+      2.484375
+    ],
+    "scale": [
+      0.078125,
+      0.25,
+      1
+    ]
+  },
+  {
+    "id": "SOFT-child-bed-pillow",
+    "name": "飘窗床枕头",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.28125,
+      0.12,
+      0.625
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-bed-pillow",
+    "position": [
+      7.71875,
+      0.6699999999999999,
+      2.421875
+    ],
+    "scale": [
+      0.28125,
+      0.12,
+      0.625
+    ]
+  },
+  {
+    "id": "SOFT-child-bed-throw",
+    "name": "飘窗床织物",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.34375,
+      0.025000000000000022,
+      1.140625
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-bed-throw",
+    "position": [
+      6.078125,
+      0.6225,
+      2.4609375
+    ],
+    "scale": [
+      0.34375,
+      0.025000000000000022,
+      1.140625
+    ]
+  },
+  {
+    "id": "SOFT-child-rug",
+    "name": "小次卧中部地毯",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      1.078125,
+      0.012999999999999998,
+      0.9375
+    ],
+    "layer": "design",
+    "room": "bedroom2",
+    "scheme": "SOFT-02",
+    "assetId": "child-rug",
+    "position": [
+      6.5859375,
+      0.0115,
+      3.828125
+    ],
+    "scale": [
+      1.078125,
+      0.012999999999999998,
+      0.9375
+    ]
+  },
+  {
+    "id": "SOFT-sofa-base",
+    "name": "客厅双人沙发底座",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.875,
+      0.18,
+      2.03125
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "sofa-base",
+    "position": [
+      2.5625,
+      0.21,
+      3.703125
+    ],
+    "scale": [
+      0.875,
+      0.18,
+      2.03125
+    ]
+  },
+  {
+    "id": "SOFT-sofa-back",
+    "name": "沙发靠背",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.15625,
+      0.58,
+      2.03125
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "sofa-back",
+    "position": [
+      2.921875,
+      0.5700000000000001,
+      3.703125
+    ],
+    "scale": [
+      0.15625,
+      0.58,
+      2.03125
+    ]
+  },
+  {
+    "id": "SOFT-sofa-seat0",
+    "name": "沙发坐垫",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.703125,
+      0.16999999999999998,
+      0.875
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "sofa-seat0",
+    "position": [
+      2.4921875,
+      0.385,
+      3.25
+    ],
+    "scale": [
+      0.703125,
+      0.16999999999999998,
+      0.875
+    ]
+  },
+  {
+    "id": "SOFT-sofa-cushion0",
+    "name": "沙发靠枕",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.109375,
+      0.25,
+      0.390625
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "sofa-cushion0",
+    "position": [
+      2.7890625,
+      0.595,
+      3.1796875
+    ],
+    "scale": [
+      0.109375,
+      0.25,
+      0.390625
+    ]
+  },
+  {
+    "id": "SOFT-sofa-seat1",
+    "name": "沙发坐垫",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.703125,
+      0.16999999999999998,
+      0.875
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "sofa-seat1",
+    "position": [
+      2.4921875,
+      0.385,
+      4.15625
+    ],
+    "scale": [
+      0.703125,
+      0.16999999999999998,
+      0.875
+    ]
+  },
+  {
+    "id": "SOFT-sofa-cushion1",
+    "name": "沙发靠枕",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.109375,
+      0.25,
+      0.390625
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "sofa-cushion1",
+    "position": [
+      2.7890625,
+      0.595,
+      4.1484375
+    ],
+    "scale": [
+      0.109375,
+      0.25,
+      0.390625
+    ]
+  },
+  {
+    "id": "SOFT-sofa-arm220",
+    "name": "沙发扶手",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.875,
+      0.38,
+      0.125
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "sofa-arm220",
+    "position": [
+      2.5625,
+      0.47000000000000003,
+      2.75
+    ],
+    "scale": [
+      0.875,
+      0.38,
+      0.125
+    ]
+  },
+  {
+    "id": "SOFT-sofa-arm342",
+    "name": "沙发扶手",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.875,
+      0.38,
+      0.125
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "sofa-arm342",
+    "position": [
+      2.5625,
+      0.47000000000000003,
+      4.65625
+    ],
+    "scale": [
+      0.875,
+      0.38,
+      0.125
+    ]
+  },
+  {
+    "id": "SOFT-rug",
+    "name": "客厅地毯",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      1.6875,
+      0.012999999999999998,
+      1.96875
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "rug",
+    "position": [
+      1.84375,
+      0.0115,
+      3.703125
+    ],
+    "scale": [
+      1.6875,
+      0.012999999999999998,
+      1.96875
+    ]
+  },
+  {
+    "id": "SOFT-coffee-top",
+    "name": "茶几台面",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.46875,
+      0.040000000000000036,
+      0.78125
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "coffee-top",
+    "position": [
+      1.46875,
+      0.38,
+      3.703125
+    ],
+    "scale": [
+      0.46875,
+      0.040000000000000036,
+      0.78125
+    ]
+  },
+  {
+    "id": "SOFT-coffee-leg-239-263",
+    "name": "茶几腿",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.03125,
+      0.34199999999999997,
+      0.03125
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "coffee-leg-239-263",
+    "position": [
+      1.28125,
+      0.189,
+      3.375
+    ],
+    "scale": [
+      0.03125,
+      0.34199999999999997,
+      0.03125
+    ]
+  },
+  {
+    "id": "SOFT-coffee-leg-239-305",
+    "name": "茶几腿",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.03125,
+      0.34199999999999997,
+      0.03125
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "coffee-leg-239-305",
+    "position": [
+      1.28125,
+      0.189,
+      4.03125
+    ],
+    "scale": [
+      0.03125,
+      0.34199999999999997,
+      0.03125
+    ]
+  },
+  {
+    "id": "SOFT-coffee-leg-263-263",
+    "name": "茶几腿",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.03125,
+      0.34199999999999997,
+      0.03125
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "coffee-leg-263-263",
+    "position": [
+      1.65625,
+      0.189,
+      3.375
+    ],
+    "scale": [
+      0.03125,
+      0.34199999999999997,
+      0.03125
+    ]
+  },
+  {
+    "id": "SOFT-coffee-leg-263-305",
+    "name": "茶几腿",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      0.03125,
+      0.34199999999999997,
+      0.03125
+    ],
+    "layer": "design",
+    "room": "living",
+    "scheme": "SOFT-02",
+    "assetId": "coffee-leg-263-305",
+    "position": [
+      1.65625,
+      0.189,
+      4.03125
+    ],
+    "scale": [
+      0.03125,
+      0.34199999999999997,
+      0.03125
+    ]
+  },
+  {
+    "id": "SOFT-study-window-cushion",
+    "name": "书房窗台坐垫",
+    "evidence": "按当前净空放置；尺寸为方案适配值，非已确认品牌型号。",
+    "status": "软装预览 · 待选型",
+    "dimensions": [
+      1.875,
+      0.04999999999999999,
+      0.328125
+    ],
+    "layer": "design",
+    "room": "bedroom1",
+    "scheme": "SOFT-02",
+    "assetId": "study-window-cushion",
+    "position": [
+      4.390625,
+      0.475,
+      2.2109375
+    ],
+    "scale": [
+      1.875,
+      0.04999999999999999,
+      0.328125
+    ]
+  }
+]

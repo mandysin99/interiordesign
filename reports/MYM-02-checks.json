@@ -1,0 +1,106 @@
+{
+  "results": [
+    {
+      "name": "original建筑不变",
+      "passed": true
+    },
+    {
+      "name": "original定制阶段归属",
+      "passed": true
+    },
+    {
+      "name": "original书房门墙",
+      "passed": true
+    },
+    {
+      "name": "original阳台推拉门",
+      "passed": true
+    },
+    {
+      "name": "delivery建筑不变",
+      "passed": true
+    },
+    {
+      "name": "delivery定制阶段归属",
+      "passed": true
+    },
+    {
+      "name": "delivery书房门墙",
+      "passed": true
+    },
+    {
+      "name": "delivery阳台推拉门",
+      "passed": true
+    },
+    {
+      "name": "phase1建筑不变",
+      "passed": true
+    },
+    {
+      "name": "phase1定制阶段归属",
+      "passed": true
+    },
+    {
+      "name": "phase1书房门墙",
+      "passed": true
+    },
+    {
+      "name": "phase1阳台推拉门",
+      "passed": true
+    },
+    {
+      "name": "custom建筑不变",
+      "passed": true
+    },
+    {
+      "name": "custom定制阶段归属",
+      "passed": true
+    },
+    {
+      "name": "custom书房门墙",
+      "passed": true
+    },
+    {
+      "name": "custom阳台推拉门",
+      "passed": true
+    },
+    {
+      "name": "final建筑不变",
+      "passed": true
+    },
+    {
+      "name": "final定制阶段归属",
+      "passed": true
+    },
+    {
+      "name": "final书房门墙",
+      "passed": true
+    },
+    {
+      "name": "final阳台推拉门",
+      "passed": true
+    },
+    {
+      "name": "柜体非建筑层",
+      "passed": true
+    },
+    {
+      "name": "稳定ID唯一",
+      "passed": true
+    },
+    {
+      "name": "尺寸均为正",
+      "passed": true
+    },
+    {
+      "name": "关闭设计层隐藏定制",
+      "passed": true
+    }
+  ],
+  "custom_parts": 379,
+  "limits": [
+    "效果图体块，不是下单尺寸",
+    "未支持柜组拖动编辑",
+    "未核实全部柜门/窗扇开启冲突"
+  ]
+}

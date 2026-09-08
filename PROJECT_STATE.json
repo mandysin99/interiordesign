@@ -1,0 +1,68 @@
+{
+  "base_version": "BASE-v3",
+  "current_stage": "建筑+交付现状待核对",
+  "study": "bedroom1",
+  "design_status": "MYM-07：入户正面齐平，原柜/凹位饰面归保留现状",
+  "confirmed_by_user": {
+    "study_room": "1号大次卧",
+    "study_layout": "面向窗左书柜右书桌",
+    "tv_base_length_m": 2,
+    "child_bed": "床在飘窗上，与衣柜相接",
+    "fridge_layout": "西侧凹位，面对冰箱左鞋柜右薄背景墙，背景墙不打柜",
+    "living_elevation_order": "面向墙从右至左：2m电视柜、暂定1.6m餐边柜、背景墙、凹位冰箱、鞋柜+玄关柜",
+    "entry_front_alignment": "原入户柜、冰箱门、背景墙基本齐平"
+  },
+  "reviewed": false,
+  "backup": "../版本归档/BASE-v2",
+  "geometry_checks": "reports/BASE-v3-geometry-checks.json",
+  "measurement_status": "详见spatial.json：value为空均未确认",
+  "pending": [
+    "厨卫实测",
+    "吊顶/风口/检修口定位",
+    "湿区降板",
+    "窗帘盒尺寸",
+    "墙体可拆性",
+    "冰箱机型及安装余量"
+  ],
+  "custom_stage": "custom",
+  "backup_before_custom": "../版本归档/BASE-v3-定制前",
+  "primary_reference": "https://www.kujiale.cn/design/3FO3EC7CJORS/airoaming?fromqrcode=true",
+  "custom_reviewed_rooms": [
+    "客餐厅",
+    "书房",
+    "主卧",
+    "儿童房",
+    "阳台"
+  ],
+  "soft_stage": "furnished",
+  "backup_before_mym03": "../版本归档/MYM-02",
+  "backup_before_mym04": "../版本归档/MYM-03",
+  "backup_before_mym05": "../版本归档/MYM-04",
+  "backup_before_mym06": "../版本归档/MYM-05",
+  "delivery_drawing_audit": "reports/交付图分层核对.html",
+  "latest_entry_revision": {
+    "front_x": 0.897,
+    "south_z": 9.734375,
+    "cad_origin": [
+      -35641.01108943,
+      976.06007678
+    ],
+    "outer": [
+      0.96,
+      0.7
+    ],
+    "clear_user": [
+      0.9,
+      0.68
+    ],
+    "entry_depth": 0.325,
+    "entry_segments": [
+      0.5,
+      0.6,
+      0.49
+    ],
+    "height_status": "暂沿用2.40m，非DWG测得",
+    "registration": "仅入户局部；原柜南端及正面为配准锚点，全屋尚未按DWG重建"
+  },
+  "latest_version": "MYM-08"
+}

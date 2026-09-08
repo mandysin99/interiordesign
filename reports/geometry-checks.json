@@ -1,0 +1,59 @@
+{
+  "version": "BASE-v2",
+  "solids": 202,
+  "openings": 21,
+  "design_layers": 0,
+  "positive_dimensions": true,
+  "unique_part_ids": true,
+  "opening_sample_obstructions": [],
+  "unchanged_bedroom_and_balcony_parts": 119,
+  "existing_bedroom_balcony_geometry_preserved": true,
+  "kitchen_clear_width_m": 1.91,
+  "kitchen_clear_depth_m": 2.023125,
+  "bathroom_clear_width_m": 2.485,
+  "bathroom_clear_depth_m": 1.416875,
+  "changes": {
+    "added": [
+      "W-kitchen-exterior-east-jamb-0",
+      "W-kitchen-exterior-east-sill-1",
+      "W-kitchen-exterior-east-lintel-2",
+      "W-kitchen-exterior-east-jamb-3",
+      "W-kitchen-exterior-south-jamb-0",
+      "W-bathroom-east-jamb-0",
+      "W-bathroom-south-jamb-0",
+      "W-bathroom-south-sill-1",
+      "W-bathroom-south-lintel-2",
+      "W-bathroom-south-jamb-3",
+      "W-bathroom-shower-divider-jamb-0",
+      "W-bathroom-shower-divider-jamb-1",
+      "WIN-kitchen-east-frame-a",
+      "WIN-kitchen-east-frame-b",
+      "WIN-kitchen-east-frame-head",
+      "WIN-kitchen-east-frame-sill",
+      "WIN-kitchen-east-mullion",
+      "WIN-kitchen-east-glass-a",
+      "WIN-kitchen-east-glass-b",
+      "WIN-bathroom-south-frame-a",
+      "WIN-bathroom-south-frame-b",
+      "WIN-bathroom-south-frame-head",
+      "WIN-bathroom-south-frame-sill",
+      "WIN-bathroom-south-mullion",
+      "WIN-bathroom-south-glass-a",
+      "WIN-bathroom-south-glass-b",
+      "G-shower-divider-frame-a",
+      "G-shower-divider-frame-b",
+      "G-shower-divider-frame-head",
+      "G-shower-divider-frame-sill",
+      "G-shower-divider-mullion",
+      "G-shower-divider-glass-a",
+      "G-shower-divider-glass-b"
+    ],
+    "removed": [
+      "W-west-portal-lintel-1",
+      "W-west-portal-jamb-2"
+    ],
+    "changed_geometry": [
+      "W-west-portal-jamb-0"
+    ]
+  }
+}

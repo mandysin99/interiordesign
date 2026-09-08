@@ -1,0 +1,32 @@
+[
+  {
+    "file": "BASE-v3-交付现状-开顶.glb",
+    "bytes": 245972,
+    "phase": "delivery",
+    "node_count": 352
+  },
+  {
+    "file": "BASE-v3-第一阶段门墙示意.glb",
+    "bytes": 244176,
+    "phase": "phase1",
+    "node_count": 352
+  },
+  {
+    "file": "BASE-v3-最终封窗范围示意.glb",
+    "bytes": 242664,
+    "phase": "final",
+    "node_count": 347
+  },
+  {
+    "file": "BASE-v3-交付现状.glb",
+    "bytes": 245920,
+    "phase": "delivery",
+    "node_count": 352
+  },
+  {
+    "file": "BASE-v3-原始建筑.glb",
+    "bytes": 54892,
+    "phase": "original",
+    "node_count": 112
+  }
+]
