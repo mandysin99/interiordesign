@@ -2,14 +2,15 @@ import {masterLayout as ml} from './master-bedroom-layout.js';
 // MYM-14: checked by dragging the supplied Kujiale panoramas, 2026-09-07.
 // Geometry follows visible relationships; numeric dimensions remain fit-to-base proxies.
 export function buildCustom({THREE,groups,box,px,pz,lv}){
- const group=new THREE.Group();group.name='MYM-14 木与梦全景校正（尺寸待核）';groups.design.add(group);
+ const group=new THREE.Group();group.name='客厅佰怡家 + 保留木与梦（尺寸待核）';groups.design.add(group);
  const items=[],assemblies=[];
  // Procedural cane surface: crossed flat strands and dark woven recesses, at physical repeat scale.
  const size=128,pixels=new Uint8Array(size*size*4);
  const dist=(x)=>Math.min(((x%1)+1)%1,1-((x%1)+1)%1);
  for(let y=0;y<size;y++)for(let x=0;x<size;x++){const u=x/size,v=y/size,h=dist(v)<.115,vert=dist(u)<.115,diag=dist(u+v)<.052||dist(u-v)<.052;let color=[85,63,39];if(h||vert){const shade=10*Math.sin((h?v:u)*Math.PI*26)+5*Math.sin((u+v)*Math.PI*42);color=[179+shade,139+shade,86+shade];}const i=(y*size+x)*4;pixels.set([...color,255],i);}
  const cane=new THREE.DataTexture(pixels,size,size);cane.wrapS=cane.wrapT=THREE.RepeatWrapping;cane.colorSpace=THREE.SRGBColorSpace;cane.magFilter=THREE.LinearFilter;cane.minFilter=THREE.LinearMipmapLinearFilter;cane.generateMipmaps=true;cane.needsUpdate=true;
- function canePanel(mesh,width,height,face){const tex=cane.clone();tex.repeat.set(width/.018,height/.018);tex.needsUpdate=true;mesh.material=mesh.material.clone();mesh.material.color.set(0xffffff);mesh.material.map=tex;mesh.material.roughness=.9;mesh.material.side=THREE.DoubleSide;
+ function canePanel(mesh,width,height,face,rectangular=false){const tex=cane.clone();tex.repeat.set(width/.018,height/.018);tex.needsUpdate=true;mesh.material=mesh.material.clone();mesh.material.color.set(0xffffff);mesh.material.map=tex;mesh.material.roughness=.9;mesh.material.side=THREE.DoubleSide;
+ if(rectangular){mesh.userData.finish='佰怡家参考 · 长方形木框藤编门芯；程序化材质，色号待核';return;}
  const radius=Math.min(.5,width/(2*height)),shape=new THREE.Shape();shape.moveTo(-.5,-.5);shape.lineTo(.5,-.5);shape.lineTo(.5,.5-radius);shape.bezierCurveTo(.5,.5-radius*.448,.276,.5,0,.5);shape.bezierCurveTo(-.276,.5,-.5,.5-radius*.448,-.5,.5-radius);shape.closePath();const geo=new THREE.ShapeGeometry(shape,24);if(face==='east'||face==='west')geo.rotateY(Math.PI/2);mesh.geometry=geo;mesh.userData.finish='木框拱形藤编门芯；程序化编织材质，非原厂贴图';
  }
 
@@ -24,9 +25,9 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
   for(const [n,a,b,c,e,f,g] of [['侧板A',0,t,0,d,0,height],['侧板B',w-t,w,0,d,0,height],['背板',t,w-t,d-t,d,t,height-t],['顶板',t,w-t,0,d,height-t,height],['底板',t,w-t,0,d,.04,.04+t]])local(n,a,b,c,e,f,g,'customWood');
   for(let i=1;i<=shelves;i++){const h=.07+(height-.10)*i/(shelves+1);local('层板'+i,t,w-t,.012,d-t,h,h+t,'customWood');}
   if(doors){for(let i=0;i<count;i++){const a=w*i/count+.004,b=w*(i+1)/count-.004;
-    if(doors==='cane'){
+    if(doors==='cane'||doors==='rectangularCane'){
      local('木框门'+i,a,b,-.022,.002,.075,height-.012,'customWood');
-     const lo=id==='master-wardrobe'?.65:.11,hi=height-.065;const panel=local('拱形藤编门芯'+i,a+.045,b-.045,-.026,-.025,lo,hi,'customWood');canePanel(panel,b-a-.09,hi-lo,face);
+     const lo=id==='master-wardrobe'?.65:.11,hi=height-.065;const panel=local((doors==='rectangularCane'?'长方形':'拱形')+'藤编门芯'+i,a+.045,b-.045,-.026,-.025,lo,hi,'customWood');canePanel(panel,b-a-.09,hi-lo,face,doors==='rectangularCane');
     }else if(doors==='glass'){
      local('玻璃门'+i,a+.027,b-.027,-.014,.003,.11,height-.03,'glass');
      for(const [n,u1,u2,y1,y2] of [['门边A',a,a+.028,.075,height-.012],['门边B',b-.028,b,.075,height-.012],['门上边',a,b,height-.04,height-.012],['门下边',a,b,.075,.11]])local(n+i,u1,u2,-.022,.004,y1,y2,'customWood');
@@ -71,24 +72,22 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  assemblies.push({id:'MYM-living-fridge',name:'冰箱区外包960×700',room:'entry',min:[rear,0,fridgeNorth],max:[front,2.40,shoeStart],face:'east',layer:'retained',clear:[.900,.680],status:'外包DWG；净空间用户提供；高度待测'});
  // User-approved elevation: right TV 2.0m → coffee 1.6m → backdrop → fridge → entry storage.
  // 64px/m: TV 180..308 = 128px; coffee 308..410.4 = 102.4px.
- cabinet('coffee-base-north','餐边地柜右半 · 对开双门',r(171,209,308,359.2),.85,'east','living',{count:2});
+ cabinet('coffee-base-north','佰怡家餐边地柜 · 奶油白门板',r(171,209,308,359.2),.85,'east','living',{count:2,doors:'beyCream'});
  const coffeeDrawers=cabinet('coffee-base-drawers','餐边地柜左半 · 三抽屉',r(171,209,359.2,410.4),.85,'east','living',{doors:false});
- for(let i=0;i<3;i++){const lo=.07+i*.256,hi=lo+.25;coffeeDrawers.local('抽屉面'+i,.004,.796,-.022,.002,lo,hi,'customWood');coffeeDrawers.local('抽屉把手'+i,.388,.412,-.045,-.022,(lo+hi)/2,(lo+hi)/2+.025,'customWood');}
- part('coffee-counter-north','餐边台面 · 1600mm暂定',[px(171),px(210),pz(308),pz(410.4),.85,.88],'sill','living');
+ for(let i=0;i<3;i++){const lo=.07+i*.256,hi=lo+.25;coffeeDrawers.local('抽屉面'+i,.004,.796,-.022,.002,lo,hi,'beyCream');coffeeDrawers.local('抽屉把手'+i,.388,.412,-.045,-.022,(lo+hi)/2,(lo+hi)/2+.025,'customWood');}
+ part('coffee-counter-north','餐边木色台面 · 1600mm暂定',[px(171),px(210),pz(308),pz(410.4),.85,.88],'customWood','living');
  part('coffee-back-north','餐边柜操作区背板',[px(171),px(173),pz(308),pz(410.4),.88,1.58],'customWood','living');
- // Right half arched cane; left half open shelf with solid upper doors, matching the supplied elevation.
- cabinet('coffee-upper-north','餐边上柜右半 · 拱形藤编',r(171,193,308,359.2),.80,'east','living',{bottom:1.58,doors:'cane',count:2,shelves:1});
- cabinet('coffee-upper-left','餐边上柜左半 · 木门',r(171,193,359.2,410.4),.50,'east','living',{bottom:1.88,count:2});
- cabinet('coffee-open-left','餐边左侧开放格',r(171,193,359.2,410.4),.30,'east','living',{bottom:1.58,doors:false});
- cabinet('tv-base','电视低柜 · 用户确认长2000mm',r(171,194,180,308),.38,'east','living',{count:4});
+ cabinet('coffee-upper-north','佰怡家餐边上柜 · 三扇长方形藤编门',r(171,193,308,410.4),.80,'east','living',{bottom:1.58,doors:'rectangularCane',count:3,shelves:1});
+ cabinet('tv-base','佰怡家电视低柜 · 奶油白门板 · 长2000mm',r(171,194,180,308),.38,'east','living',{count:4,doors:'beyCream'});
  part('tv-location','55英寸电视 · 16:9屏幕1218×685',[px(173),px(175),pz(205.03),pz(282.97),.92,1.605],'dark','living');
  // Opposite wall, beside the bathroom/room passage and L-shaped kitchen partition.
  // Full wall length: corridor corner z435 through kitchen glass inside face z545.52.
- cabinet('dining-bench','满墙卡座下柜 · 收至过道墙边',r(327,354.6,435,545.52),.43,'west','living',{count:3});
+ cabinet('dining-bench','满墙卡座下柜 · 收至过道墙边',r(327,354.6,435,545.52),.43,'west','living',{count:3,doors:'beyCream'});
  part('bench-seat','满墙卡座坐面',[px(325),px(354.6),pz(435),pz(545.52),.43,.49],'cabinet','living');
  part('bench-back','满墙软包靠背',[px(351),px(354.6),pz(435),pz(545.52),.49,.95],'cabinet','living');
- cabinet('bench-upper','满墙餐边吊柜 · 过道端编织双门',r(336,354.6,435,490.26),lv('living','soffit')-1.87,'west','living',{bottom:1.87,doors:'cane',count:2,shelves:1});
- cabinet('bench-upper-wood','满墙餐边吊柜 · 靠厨房木门',r(336,354.6,490.26,545.52),lv('living','soffit')-1.87,'west','living',{bottom:1.87,count:2,shelves:1});
+ cabinet('bench-upper','卡座上方玻璃展示柜 · 分段暂沿用旧模型',r(336,354.6,435,490.26),lv('living','soffit')-1.87,'west','living',{bottom:1.87,doors:'glass',count:2,shelves:1});
+ cabinet('bench-upper-wood','卡座上方奶油白吊柜',r(336,354.6,490.26,545.52),lv('living','soffit')-1.87,'west','living',{bottom:1.87,count:2,shelves:1,doors:'beyCream'});
+ for(const mesh of items.filter(mesh=>/^MYM-(coffee-|tv-|dining-bench-|bench-)/.test(mesh.name))){Object.assign(mesh.userData,{scheme:'BEYHOME-20261103',evidence:'用户打开的佰怡家全景720参考：奶油白门板、暖木框架、长方形藤编；尺寸及部分分格沿用旧模型，非厂家深化图。'});}
  // Study: facing north window, user override mirrors below: bookcase left/west, desk right/east.
  // Reference 1: paired arched reeded glass doors, central open niche and drawers.
  for(const [id,z1,z2] of [['a',208,272],['b',299,359]]){
