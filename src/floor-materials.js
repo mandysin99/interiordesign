@@ -24,5 +24,16 @@ export function floorMaterials(THREE){
  const map=new THREE.DataTexture(pixels,size,size);map.colorSpace=THREE.SRGBColorSpace;map.wrapS=map.wrapT=THREE.RepeatWrapping;map.repeat.set(1/period,1/period);map.magFilter=THREE.LinearFilter;map.minFilter=THREE.LinearMipmapLinearFilter;map.generateMipmaps=true;map.anisotropy=8;map.needsUpdate=true;
  return new THREE.MeshStandardMaterial({map,color:0xffffff,roughness:.86,metalness:0});
  }
- return {timber:material('straight',[188,163,128]),tile:material('chevron',[173,140,102]),spc:material('spc',[101,78,56])};
+ const confirmedWood=material('chevron',[183,143,101]);
+ confirmedWood.name='罗浮威尔 68183 · 用户实物照片色感近似';
+ confirmedWood.userData={product:'68183',brand:'罗浮威尔',basis:'用户照片；程序木纹近似，非厂家贴图',scale:'沿用鱼骨预览尺度，实际规格待确认'};
+ const tulipMap=new THREE.TextureLoader().load(new URL('../assets/materials/AR3089H-reference.jpg',import.meta.url).href);
+ tulipMap.colorSpace=THREE.SRGBColorSpace;
+ tulipMap.wrapS=tulipMap.wrapT=THREE.RepeatWrapping;
+ tulipMap.repeat.set(1/.6,1/.6);
+ tulipMap.anisotropy=8;
+ const tulip=new THREE.MeshStandardMaterial({map:tulipMap,color:0xffffff,roughness:.82,metalness:0});
+ tulip.name='罗浮威尔 郁金香 AR3089H · 厨房花砖';
+ tulip.userData={product:'AR3089H',brand:'罗浮威尔',basis:'用户提供的四砖产品图裁切',tileSizePreviewM:.3,sizeConfirmed:false};
+ return {timber:material('straight',[188,163,128]),tile:material('chevron',[173,140,102]),spc:material('spc',[101,78,56]),confirmedWood,tulip};
 }

@@ -35,13 +35,17 @@ export function addExisting(model,data,values={}){
  const balconyFinish=slabPoly(bal,lv('balcony','finished'),'FIN-balcony-pending',finish,Math.max(.015,lv('balcony','finished')+.13),'tile');balconyFinish.userData={room:'balcony',floorScope:true};
  for(const bay of data.bays){const pts=bay.footprint_px.map(([x,z])=>[px(x),pz(z)]);slabPoly(pts,-.05,'SLAB-'+bay.id,model.floors,.12,'sill');const xx=bay.footprint_px.map(p=>p[0]),zz=bay.footprint_px.map(p=>p[1]);bpx('SILL-'+bay.id,'保留飘窗台',Math.min(...xx),Math.max(...xx),Math.min(...zz),Math.max(...zz),bay.sill-.02,bay.sill,'sill',fixtures,'宜家图窗台标高；面层厚度暂取20mm','图纸标高');}
  // Separate retained timber, tile demolition, replacement tile and SPC finish representations.
- const floorMats=floorMaterials(THREE),timberFloor=floorMats.timber,woodTile=floorMats.tile,spcFloor=floorMats.spc;model.materials.push(timberFloor,woodTile,spcFloor);
- const newFloors=new THREE.Group();newFloors.name='第一阶段地面：客厅入户过道阳台木纹砖／厨房深色SPC';groups.design.add(newFloors);
+ const floorMats=floorMaterials(THREE),timberFloor=floorMats.timber,woodTile=floorMats.tile;model.materials.push(...Object.values(floorMats));
+ const newFloors=new THREE.Group();newFloors.name='地面选材：客厅走廊68183／厨房AR3089H／入户阳台沿用旧方案';groups.design.add(newFloors);
  const changedFloors=[];
  for(const m of finish.children){const room=m.userData.room;
   if(['bedroom1','bedroom2','master'].includes(room)){m.material=timberFloor;m.userData.name='保留原木地板';m.userData.action='保留，不拆';}
   if(['living','entry','corridor','balcony','kitchen'].includes(room)){
-   const n=m.clone();n.name='NEW-FLOOR-'+m.name;n.material=room==='kitchen'?spcFloor:woodTile;n.userData={...m.userData,name:room==='kitchen'?'厨房SPC地板（铺法与厚度待定）':'筑木风尚 R1206510 · 暖棕鱼骨木纹砖',action:room==='kitchen'?'原砖不列入拆除，新增SPC面层示意':(['entry','balcony'].includes(room)?'新木纹砖；原砖拆留做法待定':'拆原砖后换铺'),evidence:'用户确认拆改范围；沿用现有完成面显示，不据此推断找平或铺装厚度'};newFloors.add(n);changedFloors.push(m);
+   const n=m.clone();n.name='NEW-FLOOR-'+m.name;
+   const confirmedWood=['living','corridor'].includes(room);
+   n.material=room==='kitchen'?floorMats.tulip:confirmedWood?floorMats.confirmedWood:woodTile;
+   n.userData={...m.userData,name:room==='kitchen'?'罗浮威尔 郁金香 AR3089H · 厨房花砖':confirmedWood?'罗浮威尔 68183 · 木纹砖':'筑木风尚 R1206510 · 旧方案待确认',action:room==='kitchen'?'花砖替代原SPC方案；基层拆留、厚度及门口收口待确认':confirmedWood?'拆原砖后换铺；铺向、规格与缝宽待确认':'沿用旧方案；本次未确认改为68183',evidence:'2026-11-03用户确认型号与使用房间；图片仅作视觉参考；保持原完成面标高'};
+   newFloors.add(n);changedFloors.push(m);
   }
  }
  // Compact U kitchen: west is the existing L-shaped sliding partition.
