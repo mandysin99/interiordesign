@@ -26,7 +26,7 @@ export function floorMaterials(THREE){
  }
  const confirmedWood=material('chevron',[183,143,101]);
  confirmedWood.name='罗浮威尔 68183 · 用户实物照片色感近似';
- confirmedWood.userData={product:'68183',brand:'罗浮威尔',basis:'用户照片；程序木纹近似，非厂家贴图',scale:'沿用鱼骨预览尺度，实际规格待确认'};
+ confirmedWood.userData={product:'68183',brand:'罗浮威尔',basis:'用户照片；程序木纹近似，非厂家贴图',tileSizeMm:[600,1200],sizeConfirmed:true,scale:'2026-11-04用户确认整片600×1200mm；现有鱼骨纹仅为外观近似，整片砖缝与纹样比例尚未校正'};
  const tulipMap=new THREE.TextureLoader().load(new URL('../assets/materials/AR3089H-reference.jpg',import.meta.url).href);
  tulipMap.colorSpace=THREE.SRGBColorSpace;
  tulipMap.wrapS=tulipMap.wrapT=THREE.RepeatWrapping;
@@ -34,6 +34,6 @@ export function floorMaterials(THREE){
  tulipMap.anisotropy=8;
  const tulip=new THREE.MeshStandardMaterial({map:tulipMap,color:0xffffff,roughness:.82,metalness:0});
  tulip.name='罗浮威尔 郁金香 AR3089H · 厨房花砖';
- tulip.userData={product:'AR3089H',brand:'罗浮威尔',basis:'用户提供的四砖产品图裁切',tileSizePreviewM:.3,sizeConfirmed:false};
+ tulip.userData={product:'AR3089H',brand:'罗浮威尔',basis:'用户提供的四砖产品图裁切；2026-11-04用户确认单砖300×300mm',tileSizePreviewM:.3,tileSizeMm:[300,300],sizeConfirmed:true};
  return {timber:material('straight',[188,163,128]),tile:material('chevron',[173,140,102]),spc:material('spc',[101,78,56]),confirmedWood,tulip};
 }

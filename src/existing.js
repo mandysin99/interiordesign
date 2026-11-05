@@ -29,7 +29,7 @@ export function addExisting(model,data,values={}){
  function clip(poly,edge,keepLess){const out=[];for(let i=0;i<poly.length;i++){const a=poly[i],b=poly[(i+1)%poly.length],ia=keepLess?a[1]<=edge:a[1]>=edge,ib=keepLess?b[1]<=edge:b[1]>=edge;if(ia)out.push(a);if(ia!==ib){const t=(edge-a[1])/(b[1]-a[1]);out.push([a[0]+t*(b[0]-a[0]),edge]);}}return out;}
  const boundary=pz(173),main=clip(data.footprint,boundary,false),bal=clip(data.footprint,boundary,true);
  slabPoly(main,-.05,'SLAB-main-structure-minus050',model.floors,.12,'sill');slabPoly(bal,-.13,'SLAB-balcony-structure-minus130',model.floors,.12,'sill');
- const finishRegions={bedroom1:[365,512,201,359],bedroom2:[527,669,201,359],master:[606,839,201,435],entry:[182,268,550,693],corridor:[361,606,359,435],kitchen:[268,404.8,550,693],bathroom:[361,541.8,435,550]};
+ const finishRegions={bedroom1:[365,512,201,359],bedroom2:[527,669,201,359],master:[606,839,201,435],entry:[182,268,550,693],corridor:[361,606,359,435],kitchen:[268,418.24,550,694.08],bathroom:[361,541.8,435,550]};
  const xx=[...new Set([137,845,...Object.values(finishRegions).flatMap(r=>r.slice(0,2))])].sort((a,b)=>a-b),zz=[...new Set([173,693,...Object.values(finishRegions).flatMap(r=>r.slice(2))])].sort((a,b)=>a-b);
  function clipAxis(poly,axis,edge,less){const out=[];for(let i=0;i<poly.length;i++){const a=poly[i],b=poly[(i+1)%poly.length],ia=less?a[axis]<=edge:a[axis]>=edge,ib=less?b[axis]<=edge:b[axis]>=edge;if(ia)out.push(a);if(ia!==ib){const t=(edge-a[axis])/(b[axis]-a[axis]);out.push([a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1])]);}}return out;}
  for(let i=0;i<xx.length-1;i++)for(let j=0;j<zz.length-1;j++){let poly=main;for(const [axis,edge,less] of [[0,px(xx[i]),false],[0,px(xx[i+1]),true],[1,pz(zz[j]),false],[1,pz(zz[j+1]),true]])poly=clipAxis(poly,axis,edge,less);if(poly.length<3)continue;const area=Math.abs(poly.reduce((a,v,k)=>a+v[0]*poly[(k+1)%poly.length][1]-v[1]*poly[(k+1)%poly.length][0],0))/2;if(area<.00001)continue;const cx=(xx[i]+xx[i+1])/2,cz=(zz[j]+zz[j+1])/2,rid=Object.keys(finishRegions).reverse().find(id=>{const [a,b,c,d]=finishRegions[id];return cx>=a&&cx<=b&&cz>=c&&cz<=d;})||'living';const top=lv(rid,'finished');const floor=slabPoly(poly,top,'FIN-'+rid+'-'+i+'-'+j,finish,Math.max(.01,top+.05),'tile');floor.userData={room:rid,floorScope:true};}
@@ -50,7 +50,7 @@ export function addExisting(model,data,values={}){
   }
  }
  // Compact U kitchen: west is the existing L-shaped sliding partition.
- const x1=px(269.76),x2=px(392),z1=pz(551.76),z2=pz(681.24),depth=p('kitchen_depth'),h=p('counter_height'),ff=lv('kitchen','finished'),ub=p('upper_bottom'),ut=p('upper_top');
+ const x1=px(269.76),x2=px(405.44),z1=pz(551.76),z2=pz(682.32),depth=p('kitchen_depth'),h=p('counter_height'),ff=lv('kitchen','finished'),ub=p('upper_bottom'),ut=p('upper_top');
  for(const [side,za,zb] of [['north',z1,z1+depth],['south',z2-depth,z2]]){
  box('K-base-'+side,'厨房地柜 · '+side,x1+.06,x2-depth,za,zb,ff+.09,ff+h-.04);box('K-counter-'+side,'厨房台面',x1+.04,x2-depth+.015,za,zb,ff+h-.04,ff+h,'counter');
  const uz1=side==='north'?z1:z2-.35,uz2=side==='north'?z1+.35:z2;
@@ -120,7 +120,7 @@ export function addExisting(model,data,values={}){
  box('B-toilet-tank','马桶水箱',px(435),px(459),by-.19,by-.04,bf+.32,bf+.77,'porcelain');
  box('B-shower-tray','淋浴区地面（高差待测）',px(480),px(526.44),pz(440.12),by,bf,bf+.012,'tile');box('B-shower-head','淋浴花洒体块',px(522),px(526),pz(481),pz(485),bf+1.1,bf+2.0,'metal');
  // Ceiling rectangles are evidence envelopes, not inferred millimetre measurements.
- const rooms={living:[171,350,180,419],bedroom1:[365,512,207,353],bedroom2:[527,669,207,353],master:[684,832,207,429],entry:[193,260,556,680],corridor:[366,600,368,429],kitchen:[270,392,552,681],bathroom:[368,526,441,530],balcony:[171,361,61,166]};
+ const rooms={living:[171,350,180,419],bedroom1:[365,512,207,353],bedroom2:[527,669,207,353],master:[684,832,207,429],entry:[193,260,556,680],corridor:[366,600,368,429],kitchen:[270,405.44,552,682.32],bathroom:[368,526,441,530],balcony:[171,361,61,166]};
  for(const [id,[a,b,c,d]] of Object.entries(rooms)){
   const f=lv(id,'finished'),ch=lv(id,'ceiling')+f,sh=lv(id,'soffit')+f;
   bpx('C-panel-'+id,'中央天花 · '+id,a,b,c,d,ch,ch+.05,'ceiling',panels,data.levels[id].ceiling.evidence,data.levels[id].ceiling.value===null?'净高待测':'照片标注');
@@ -152,7 +152,7 @@ export function addExisting(model,data,values={}){
  strip('balcony-beam','balcony',171,188.28,61,166,'量房照片2790/2420/270；端部映射待核');
 
  // Bottom returns are horizontal on the soffit underside, unlike the side supply face.
- for(const [id,room,a,b,c,d,func] of [['master-return','master',699,829,414,422,'底回'],['entry-return','entry',196,257,558,565,'底回'],['kitchen-return','kitchen',272,280,559,673,'底回'],['kitchen-supply','kitchen',382,390,559,673,'底出']]){
+ for(const [id,room,a,b,c,d,func] of [['master-return','master',699,829,414,422,'底回'],['entry-return','entry',196,257,558,565,'底回'],['kitchen-return','kitchen',272,280,559,673,'底回'],['kitchen-supply','kitchen',395.44,403.44,559,673,'底出']]){
  const y=lv(room,'soffit')+lv(room,'finished');bpx('C-'+id,'空调 '+func+' · '+room,a,b,c,d,y-.008,y+.001,'dark',ceilings,'DWG '+func+'实体及说明；平面按房间映射，尺寸/高度待复核','DWG功能已识别');}
  bpx('C-child-service-zone','儿童房回风口下方检修避让范围',632,668,266,342,1.8,lv('bedroom2','soffit'),'zone',zones,'方案检修包络；实际滤网抽出尺寸与检修口待空调单位确认','非实测检修口');
  const pipe=box('BAL-pipe','阳台保留立管 · 介质待确认',px(181),px(190),pz(144),pz(153),.15,2.42,'metal',fixtures,'用户量房照片：梁下可见立管及管箍；位置近客厅门侧，管径/介质未标；包柜须保留检修','照片可见管段');pipe.geometry=new THREE.CylinderGeometry(.5,.5,1,24);
@@ -170,7 +170,7 @@ export function addExisting(model,data,values={}){
  box('NEW-study-glass-a','书房宽幅玻璃门 · 暂定',a,center,zs-.025,zs-.01,.035,2.25,'glass',sg);box('NEW-study-glass-b','书房宽幅玻璃门 · 暂定',center,b,zs+.01,zs+.025,.035,2.25,'glass',sg);box('NEW-study-rail','书房轨道示意',a,b,zs-.05,zs+.05,2.25,2.28,'metal',sg);
  bpx('NEW-study-smart-panel','保留智能面板 · 位置据用户描述',361,368,363,364,1.2,1.31,'dark',sg,'用户确认左侧过道有全屋智能面板；此为位置示意，安装高度/走线待现场确认','保护墙段；禁止据此推定线槽');
  box('NEW-study-wire-zone','面板墙段保护范围 · 暗线未定位',left,a,zs-.12,zs+.15,.05,2.28,'zone',zones,'保留左墙段；约1.9m为门洞总宽，双轨双扇净通行约0.9m，待选门系统','方案预留');
- const enclosure=new THREE.Group();enclosure.name='第一阶段封窗 · 系统待选';groups.design.add(enclosure);
+ const enclosure=new THREE.Group();enclosure.name='第一阶段封窗 · 系统待选';groups.retained.add(enclosure);
  bpx('NEW-balcony-glass','第一阶段封窗玻璃',170,362,53,55,.16,2.45,'glass',enclosure,'用户要求第一阶段封窗；分格为示意');
  for(const x of [170,266,362])bpx('NEW-balcony-frame-'+x,'封窗竖框',x,x+1.8,52,56,.16,2.45,'metal',enclosure);
  for(const y of [.16,2.43])bpx('NEW-balcony-rail-'+y,'封窗横框',170,364,52,56,y,y+.02,'metal',enclosure);
@@ -179,8 +179,9 @@ export function addExisting(model,data,values={}){
  const originalSetBed=custom.setBed;custom.setBed=on=>{originalSetBed(on);model.root.updateMatrixWorld(true);for(const solid of model.solids){if(solid.mesh.name.startsWith('MYM-study-')){const bounds=new THREE.Box3().setFromObject(solid.mesh);solid.min=bounds.min.toArray();solid.max=bounds.max.toArray();}}};
  for(const item of custom.items)if(!model.materials.includes(item.material))model.materials.push(item.material);
  const furnishings=buildFurnishings({THREE,groups,box,px,pz,lv});
- let hideAllCeilings=false;let phase='delivery',showPanels=false,showZones=false,layerState={architecture:true,retained:true,demolition:false,design:true};
- function apply(){const renovated=['phase1','custom','furnished','final'].includes(phase);newFloors.visible=renovated;changedFloors.forEach(m=>m.visible=!renovated||!layerState.design);custom.entryGroup.visible=phase==='delivery';custom.entryRenovation.visible=['phase1','custom','furnished'].includes(phase);groups.architecture.visible=layerState.architecture;groups.retained.visible=layerState.retained&&phase!=='original';groups.demolition.visible=layerState.demolition;groups.design.visible=layerState.design&&['phase1','custom','furnished','final'].includes(phase);studySources.forEach(m=>m.visible=!['phase1','custom','furnished','final'].includes(phase));balconySources.forEach(m=>m.visible=!['phase1','custom','furnished'].includes(phase));outerWindows.forEach(m=>m.visible=!['phase1','custom','furnished'].includes(phase));sg.visible=['phase1','custom','furnished','final'].includes(phase);enclosure.visible=['phase1','custom','furnished'].includes(phase);custom.group.visible=['custom','furnished','final'].includes(phase);furnishings.group.visible=['furnished','final'].includes(phase);panels.visible=showPanels&&!hideAllCeilings;ceilings.visible=!hideAllCeilings;zones.visible=showZones;inventory.filter(m=>['B-vanity','B-vanity-top','B-basin','B-mirror'].includes(m.name)).forEach(m=>m.visible=!['custom','furnished'].includes(phase));}
+ let enclosureState='phase';let hideAllCeilings=false;let phase='delivery',showPanels=false,showZones=false,layerState={architecture:true,retained:true,demolition:false,design:true};
+ function apply(){const sealed=enclosureState==='sealed'||(enclosureState==='phase'&&['phase1','custom','furnished'].includes(phase));const renovated=['phase1','custom','furnished','final'].includes(phase);newFloors.visible=renovated;changedFloors.forEach(m=>m.visible=!renovated||!layerState.design);custom.entryGroup.visible=phase==='delivery';custom.entryRenovation.visible=['phase1','custom','furnished'].includes(phase);groups.architecture.visible=layerState.architecture;groups.retained.visible=layerState.retained&&phase!=='original';groups.demolition.visible=layerState.demolition;groups.design.visible=layerState.design&&['phase1','custom','furnished','final'].includes(phase);studySources.forEach(m=>m.visible=!['phase1','custom','furnished','final'].includes(phase));balconySources.forEach(m=>m.visible=!sealed);outerWindows.forEach(m=>m.visible=!sealed);sg.visible=['phase1','custom','furnished','final'].includes(phase);enclosure.visible=sealed&&phase!=='original';custom.group.visible=['custom','furnished','final'].includes(phase);furnishings.group.visible=['furnished','final'].includes(phase);panels.visible=showPanels&&!hideAllCeilings;ceilings.visible=!hideAllCeilings;zones.visible=showZones;inventory.filter(m=>['B-vanity','B-vanity-top','B-basin','B-mirror'].includes(m.name)).forEach(m=>m.visible=!['custom','furnished'].includes(phase));}
+ function setEnclosure(state){if(!['phase','unsealed','sealed'].includes(state))throw Error('Invalid enclosure state');enclosureState=state;apply();}
  const kitchenFrontFinishes=inventory.filter(mesh=>/^K-(base-south-(left|right)-panel|sink-door-\d+|upper-solid-\d+-panel|(?:heatercab|gascab)-door-)/.test(mesh.name)&&!mesh.name.endsWith('pull-edge')).map(mesh=>({mesh,original:mesh.material,replacement:/^K-(base-south|sink-door)/.test(mesh.name)?mats.customWood:mats.beyCream}));
  const kitchenFronts=new THREE.Group();kitchenFronts.name='厨房仅换门板 · 原柜体保留';groups.design.add(kitchenFronts);
  for(let start=x1+.1;start<x2-depth-.006;start+=.45){box('NEW-K-front-north-'+start.toFixed(2),'厨房原分缝对应木色门板',start+.003,Math.min(start+.45,x2-depth)-.003,z1+depth+.002,z1+depth+.020,ff+.12,ff+h-.07,'customWood',kitchenFronts,'仅补充原柜体表面的门板；分缝沿用旧模型，色号与门厚待核');}
@@ -194,13 +195,13 @@ export function addExisting(model,data,values={}){
  function setHVAC(on){for(const m of ceilings.children){const vent=m.userData.name?.includes('空调');m.visible=!on||vent;if(vent){if(!m.userData.originalMaterial)m.userData.originalMaterial=m.material; if(on){m.material=m.material.clone();m.material.color.set(m.userData.name.includes('回')?0x287caf:0xd17835);}else m.material=m.userData.originalMaterial;}}panels.visible=on?false:showPanels&&!hideAllCeilings;}
  const heightAudit=new THREE.Group();heightAudit.name='层高与柜体冲突核对（非施工定位）';model.root.add(heightAudit);heightAudit.visible=false;
  const auditAreas=[
- ['entry','入户柜顶与天花／回风口重叠',[193,215,553,671],2.27,2.42,'柜顶2.40与预览天花2.36相撞40mm，冰箱上柜覆盖回风范围；先核真实标高和风口端点，不能自动移风口。'],
- ['master','主卧衣柜覆盖底回风范围',[795,829,414,429.24],2.40,2.55,'模型衣柜与底回风水平覆盖约531×125mm。DWG确认底回，但模型端点尚未完成坐标校准；建议回风区保留独立空腔和可拆封板，由空调与柜体单位联审。'],
- ['child','儿童房回风检修避让',[632,668,266,342],1.80,2.33,'上柜进入模型预留检修包络；该包络不是实测。上部应按滤网拆出路径设计可拆层板／独立检修区，底部开放格不能解决顶部检修。'],
+ ['entry','入户新柜降高后回风维护待核',[193,215,553,671],2.25,2.42,'MYM-33新柜顶随最低预览顶面减20mm，当前2.26m，已避开实体穿插；顶部不封死。约20mm名义缝隙不能证明回风量和检修空间合格；交付原柜2.40m仍是待测预览。'],
+ ['master','主卧部分回风遮挡 · 用户接受方案',[795,829,414,429.24],2.40,2.55,'用户接受主卧柜体部分遮挡回风；其余有效回风面积由空调师傅现场确认。保留柜体，不作为必须取消柜体的硬冲突；面积及风量尚未验证。'],
+ ['child','儿童房柜内检修 · 可拆顶板',[632,668,266,342],1.80,2.33,'用户接受通过柜内检修，上方设置可拆卸顶板；保留柜体。实际拆装路径及开口由现场确认，不作为必须取消柜体的硬冲突。'],
  ['study','书房柜顶靠近底回风',[365,385,208,353],2.26,2.33,'柜顶2.28、边吊底预览2.32，仅约40mm。无直接实体碰撞，但不足以证明通风和检修可行；不可盲目加封板到顶。'],
  ['balcony','阳台柜内立管检修',[176,198,138,160],.15,2.42,'照片确认立管，当前柜体包络包入管道。需核柜内层板开孔、可拆背板及管箍检修，不能整板封死。']
  ];
- for(const [id,name,r,y1,y2,evidence] of auditAreas){const q=bpx('AUDIT-height-'+id,name,...r,y1,y2,'zone',heightAudit,evidence,'模型风险定位；待实测');q.material=q.material.clone();q.material.color.set(id==='entry'||id==='master'?0xd64238:0xe8a126);q.material.depthTest=false;q.renderOrder=999;}
+ for(const [id,name,r,y1,y2,evidence] of auditAreas){const q=bpx('AUDIT-height-'+id,name,...r,y1,y2,'zone',heightAudit,evidence,'模型风险定位；待实测');q.material=q.material.clone();q.material.color.set(id==='master'||id==='child'?0x528678:0xe8a126);q.material.depthTest=false;q.renderOrder=999;}
  function setHeightAudit(on){heightAudit.visible=on;}
- apply();return {groups,custom,furnishings,inventory,fixtures,ceilings,panels,zones,finish,setPhase,setLayer,setPanels,setZones,setHVAC,setHideCeilings,setKitchenServices,setHeightAudit,lv,clearWidth:z2-z1-2*depth,get phase(){return phase;}};
+ apply();return {groups,custom,furnishings,inventory,fixtures,ceilings,panels,zones,finish,enclosure,setEnclosure,get enclosureState(){return enclosureState;},setPhase,setLayer,setPanels,setZones,setHVAC,setHideCeilings,setKitchenServices,setHeightAudit,lv,clearWidth:z2-z1-2*depth,get phase(){return phase;}};
 }

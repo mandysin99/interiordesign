@@ -37,6 +37,7 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
   }}return {local,w,d};
  }
  const r=(a,b,c,d)=>[px(a),px(b),pz(c),pz(d)];
+ const entryTop=Math.min(lv('entry','ceiling'),lv('entry','soffit'))-.02;
  const entryFace=.897;
  const entrySouth=pz(671), shoeStart=entrySouth-1.5899367, fridgeNorth=shoeStart-.960;
  const front=entryFace, rear=front-.700, cabinetRear=front-.325;
@@ -55,8 +56,8 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  cabinet('new-entry-slim','冰箱左侧薄抽 · 外宽100mm预留',[front-.600,front-.022,shoeStart-.130,shoeStart-.030],1.930,'east','living',{count:1,shelves:5});
  part('new-entry-fridge-top-infill','冰箱顶柜下接收口 · 通风构造待型号确认',[front-.025,front,fridgeNorth+.030,shoeStart-.030,1.930,2.026],'customWood','living');
  // Replace the 1100mm tall shoe cupboard with two equal zones; retain the 490mm console footprint.
- cabinet('new-entry-household','右半家政柜 · 分格存放厨电',[cabinetRear,front-.022,shoeStart,shoeStart+.550],2.40,'east','living',{count:1,shelves:5});
- cabinet('new-entry-shoe','左半鞋柜',[cabinetRear,front-.022,shoeStart+.550,shoeStart+1.100],2.40,'east','living',{count:1,shelves:7});
+ cabinet('new-entry-household','右半家政柜 · 分格存放厨电',[cabinetRear,front-.022,shoeStart,shoeStart+.550],entryTop,'east','living',{count:1,shelves:5});
+ cabinet('new-entry-shoe','左半鞋柜',[cabinetRear,front-.022,shoeStart+.550,shoeStart+1.100],entryTop,'east','living',{count:1,shelves:7});
  // Directly adjacent: 500 / 600 / 490, matching CAD plan divisions.
  cabinet('entry-shoes-near','近冰箱500段原柜',[cabinetRear,front-.022,shoeStart,shoeStart+.500],2.40,'east','living',{count:1,shelves:4});
  cabinet('entry-shoes','600段原鞋柜',[cabinetRear,front-.022,shoeStart+.500,shoeStart+1.100],2.40,'east','living',{count:1,shelves:4});
@@ -196,14 +197,19 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  for(const m of retainedItems){
   const ghost=m.clone();ghost.name='REMOVE-ref-'+m.name;ghost.material=m.material.clone();ghost.material.color.set(0xdb7350);ghost.material.wireframe=true;ghost.userData={...m.userData,layer:'demolition',reference:m.name};groups.demolition.add(ghost);
   if(m.name.startsWith('MYM-entry-shoes'))continue;
-  const replacement=m.clone();replacement.name=m.name.replace('MYM-','MYM-new-');replacement.userData={...m.userData,id:replacement.name,layer:'design',scheme:'MYM-14',evidence:'用户要求第一阶段拆除并按木与梦木色重做；尺寸沿用现有占位。'};entryRenovation.add(replacement);
+  const replacement=m.clone();replacement.name=m.name.replace('MYM-','MYM-new-');replacement.userData={...m.userData,id:replacement.name,layer:'design',scheme:'MYM-14',evidence:'第一阶段重做；新柜顶随入户最低预览顶面减20mm，原始标高及回风维护待核。'};entryRenovation.add(replacement);
   if(replacement.name.startsWith('MYM-new-fridge-overhead-')){const oldBottom=2.03,oldH=.37,newBottom=1.930,newH=2.40-newBottom;replacement.position.y=newBottom+(replacement.position.y-oldBottom)*newH/oldH;replacement.scale.y*=newH/oldH;replacement.userData.evidence='顶柜视觉下接1930mm冰箱，散热收口依最终型号复核。';}
-
+  // Only replacement cabinetry is reduced; retain the original delivery preview separately.
+  const floor=lv('living','finished'),y0=replacement.position.y-replacement.scale.y/2-floor,y1=replacement.position.y+replacement.scale.y/2-floor;
+  const mapY=y=>y<=1.93?y:1.93+(y-1.93)*(entryTop-1.93)/(2.40-1.93);
+  replacement.position.y=(mapY(y0)+mapY(y1))/2+floor;replacement.scale.y=mapY(y1)-mapY(y0);
+  replacement.userData.dimensions=[replacement.scale.x,replacement.scale.y,replacement.scale.z];replacement.userData.status='新柜避碰预览；顶部不封死，回风检修未通过';
  }
  items.filter(m=>m.name.startsWith('MYM-new-entry-')).forEach(m=>entryRenovation.add(m));
  // Existing entry finish follows the site photo, independent of new walnut cabinetry.
  for(const m of retainedItems){if(m.material.map){m.material=m.material.clone();m.material.map=null;m.material.color.set(m.name.endsWith('-back')?0x686056:0x998a78);m.material.needsUpdate=true;}}
  for(const a of assemblies)if(retainedPrefixes.some(p=>(a.id+'-').startsWith(p)))a.layer='retained';
+ for(const m of items.filter(m=>m.name.startsWith('MYM-small-upper-顶板')||m.name==='MYM-small-service-shelf'))Object.assign(m.userData,{removable:true,maintenance:'用户接受柜内检修；上方可拆顶板，实际拆卸路径现场确认'});
  const designItems=items.filter(m=>!retainedItems.includes(m));
  function setService(on){items.filter(m=>m.name.startsWith('MYM-small-upper-顶板')||m.name.startsWith('MYM-small-upper-门板')||m.name==='MYM-small-service-shelf').forEach(m=>m.visible=!on);}
  function setEntryInterior(on){items.filter(m=>/^MYM-new-entry-(shoe|household)-(门板|把手)/.test(m.name)).forEach(m=>m.visible=!on);}

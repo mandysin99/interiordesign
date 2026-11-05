@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>叻叻小屋 · BASE-v3</title>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>叻叻小屋 · VB-01</title>
 <link rel="stylesheet" href="src/style.css">
 <script type="importmap">{"imports":{"three":"./assets/three.module.js"}}</script></head>
 <body>
-<header><div class="brand"><span class="brandmark">⌑</span><div><h1>叻叻小屋 <span>建筑白模</span></h1><p>按测量图与现场照片还原 · BASE 03 · MYM-31 · 吊顶风口核对 / 家具调整 / 抽拉床双状态</p></div></div><div class="topactions"><span class="status">结构未校准 · 勿下单</span><button id="sources-btn">查看依据</button><button id="snapshot-btn">保存视图</button><button id="download-btn" class="primary">导出模型 ↓</button></div></header>
+<header><div class="brand"><span class="brandmark">⌑</span><div><h1>叻叻小屋 <span>住宅模型</span></h1><p>VB-01 · 地砖选材更新 · 2026.11.03</p></div></div><div class="topactions"><span class="status">仅视觉模拟 · 非施工尺寸</span><button id="sources-btn">查看依据</button><button id="snapshot-btn">保存视图</button><button id="download-btn" class="primary">导出模型 ↓</button></div></header>
 <main>
 <aside>
 <section class="side-block project-block">
-<div class="eyebrow">BASE-v3 / 阶段</div>
+<div class="eyebrow">VB-01 / 视觉基准</div>
 <select id="phase-select" aria-label="模型阶段"></select>
+<label class="small-note" for="enclosure-select">阳台状态（独立于装修阶段）</label><select id="enclosure-select"><option value="unsealed">未封窗 · 保留原推拉门</option><option value="sealed" selected>已封窗 · 新封窗／移除原推拉门</option></select>
 <p id="phase-note" class="small-note"></p>
 <div class="scope"><b id="selected-name">测量范围</b><p id="selected-note">三间卧室、客餐厅、阳台、入户走廊，以及本次补齐的厨房和卫生间。</p></div>
 </section>
@@ -19,8 +20,9 @@
 <a class="reference-link" href="cabinet-selection.html" target="_blank">查看新版门板与地砖效果图 ↗</a>
 <p><b>客厅 · 走廊</b><br>罗浮威尔 68183 · 木纹砖</p>
 <p><b>厨房</b><br>罗浮威尔 郁金香 AR3089H</p>
-<a class="reference-link" href="floor-selection.html" target="_blank">查看两款地砖与实景模拟效果 ↗</a>
-<p class="small-note">花砖暂按300×300mm显示，实际规格待确认。入户、阳台沿用旧方案。</p>
+<a class="reference-link" href="reports/地砖选材更新.html" target="_blank">查看样板、铺装暂值与下一步 ↗</a>
+<a class="reference-link" href="assets/materials/floor-comparison-20261103.jpg" target="_blank">查看两款地砖实景模拟效果 ↗</a>
+<p class="small-note">厨房暂按 300 × 300 mm 显示，非已确认规格。入户、阳台沿用旧方案。</p>
 </section>
 <section class="side-block">
 <div class="eyebrow">SPACE / 空间定位</div>
@@ -67,7 +69,7 @@
 <div class="checks compact"><label class="check"><input id="shadow-toggle" type="checkbox" checked>阴影</label><label class="check"><input id="outline-toggle" type="checkbox" checked>轮廓线</label></div>
 </details>
 <details class="side-block"><summary>资料依据</summary>
-<a class="reference-link" href="reports/主卧接角核对.html" target="_blank">结构差异与DWG原图 ↗</a>
+<a class="reference-link" href="reports/结构核对.html" target="_blank">结构差异与DWG原图 ↗</a>
 <a class="reference-link" href="reports/层高冲突核对.html" target="_blank">全屋层高与吊顶冲突核对 ↗</a>
 <a class="reference-link" href="https://www.kujiale.cn/design/3FO3EC7CJORS/airoaming?fromqrcode=true" target="_blank" rel="noopener">木与梦原方案 · 酷家乐改2 ↗</a>
 <a class="reference-link" href="reports/交付图分层核对.html" target="_blank">开发商图分层核对表</a>

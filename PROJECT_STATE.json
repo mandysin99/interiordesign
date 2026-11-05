@@ -1,68 +1,84 @@
 {
-  "base_version": "BASE-v3",
-  "current_stage": "建筑+交付现状待核对",
-  "study": "bedroom1",
-  "design_status": "MYM-07：入户正面齐平，原柜/凹位饰面归保留现状",
-  "confirmed_by_user": {
-    "study_room": "1号大次卧",
-    "study_layout": "面向窗左书柜右书桌",
-    "tv_base_length_m": 2,
-    "child_bed": "床在飘窗上，与衣柜相接",
-    "fridge_layout": "西侧凹位，面对冰箱左鞋柜右薄背景墙，背景墙不打柜",
-    "living_elevation_order": "面向墙从右至左：2m电视柜、暂定1.6m餐边柜、背景墙、凹位冰箱、鞋柜+玄关柜",
-    "entry_front_alignment": "原入户柜、冰箱门、背景墙基本齐平"
+  "cabinet_supplier_revision_20261103": {
+    "confirmed_by_user": {
+      "master": "保留木与梦方案；铝柜",
+      "bedroom2_child": "保留木与梦方案；铝柜",
+      "balcony": "保留木与梦方案；铝柜",
+      "living": "预算调整，改用佰怡家木柜",
+      "kitchen": "用户确认佰怡家全景还原度高；保留原柜体与布局，仅换门板，上浅下木；原台面与设备保留"
+    },
+    "reference": "用户在微信打开的全景720设计；页面署名尚诚家居，按用户说明作为佰怡家方案参考",
+    "observed_living_design": [
+      "餐边上柜为木框配长方形藤编门芯，区别于原木与梦拱形门芯",
+      "餐边下柜与电视低柜以奶油白门板搭配木色框架或台面",
+      "冰箱相邻木饰面有洞洞板区域",
+      "浅色卡座软包，卡座上方浅色吊柜结合玻璃展示格和灯带",
+      "小程序当前地板为直铺示意、沙发为浅色，不能覆盖已确认68183与黑皮沙发"
+    ],
+    "not_confirmed": [
+      "书房本轮未说明供应商",
+      "入户柜等相邻区域的具体合同范围、板材型号、门板色号与尺寸未核对"
+    ],
+    "model_status": "本地网页已更新客厅奶油白门板、木色台面及三扇长方形藤编上柜，卡座吊柜改浅色加玻璃；厨房仅在定制/软装阶段换门板。保留原柜体、台面、设备与百叶通风；主卧儿童房阳台未改。分格及尺寸部分沿用旧模型，洞洞板、展示灯光尚未完整还原。",
+    "render_v2": "旧版：白模项目/assets/materials/beyhome-floor-v2.png；用户指出厨房不像，旧模型深灰台面与浅色设备面板不应作为现状依据",
+    "accepted_kitchen_visual": "output/imagegen/厨房-佰怡家原图换花砖-v4.png；用户回复‘对’，认可按佰怡家厨房截图仅换地砖的方向。保留浅色颗粒石纹台面、窗下水槽、右侧灶台、白上柜、木下柜及黑色嵌入设备。地砖尺寸和排版仍为预览",
+    "wide_visual_request": "用户要求餐桌、走廊、厨房同画面横向广角；扩展画面须标为AI空间延展，不能覆盖测量模型。卡座上方为浅色吊柜与玻璃展示格，藤编餐边柜在另一侧，不能混合到卡座墙"
   },
-  "reviewed": false,
-  "backup": "../版本归档/BASE-v2",
-  "geometry_checks": "reports/BASE-v3-geometry-checks.json",
-  "measurement_status": "详见spatial.json：value为空均未确认",
+  "version": "VB-01",
+  "latest_version": "VB-01",
+  "base_version": "VB-01",
+  "source_revision": "MYM-33",
+  "current_stage": "VB-01建筑几何沿用；已更新客厅佰怡家柜门风格、厨房仅换门板及已选地砖",
+  "purpose": "Blender视觉模拟基准；不用于定制下单、开料或施工放线",
+  "construction_calibrated": false,
+  "geometry_source": "spatial.json + src/model.js + src/existing.js + src/custom-cabinets.js + src/furnishings.js",
+  "accepted_by_user": {
+    "master_return": "主卧柜体部分遮挡回风，保留柜体；其余有效回风面积由空调师傅现场确认",
+    "child_service": "接受柜内检修；上方设置可拆卸顶板，保留柜体"
+  },
+  "enclosure": "独立状态：未封窗保留原推拉门；已封窗显示新封窗并移除原推拉门。两种状态允许相同装修/定制阶段。",
   "pending": [
-    "厨卫实测",
-    "吊顶/风口/检修口定位",
-    "湿区降板",
-    "窗帘盒尺寸",
-    "墙体可拆性",
-    "冰箱机型及安装余量"
+    "书房完成面残差约36mm、走廊约17mm；全屋统一坐标尚未校准",
+    "多数净高、楼板底和风口端点为预览；2.95m墙顶不是实测层高",
+    "入户新柜2.26m、书房柜顶40mm缝的通风检修可行性待核",
+    "厨房局部2120×2040mm已按图中完成面调整；整体定位及窗洞待核",
+    "书房展开床与固定整面书柜冲突未解决；交接采用收起状态",
+    "冰箱安装余量、门窗型材及隐藏水电走线未确认"
   ],
-  "custom_stage": "custom",
-  "backup_before_custom": "../版本归档/BASE-v3-定制前",
-  "primary_reference": "https://www.kujiale.cn/design/3FO3EC7CJORS/airoaming?fromqrcode=true",
-  "custom_reviewed_rooms": [
-    "客餐厅",
-    "书房",
-    "主卧",
-    "儿童房",
-    "阳台"
+  "blender_file_created": true,
+  "soft_furnishing_expansion": false,
+  "export_variants": [
+    "01_建筑保留基准_未封窗",
+    "02_建筑保留基准_已封窗",
+    "03_定制家具参考_未封窗",
+    "04_定制家具参考_已封窗"
   ],
-  "soft_stage": "furnished",
-  "backup_before_mym03": "../版本归档/MYM-02",
-  "backup_before_mym04": "../版本归档/MYM-03",
-  "backup_before_mym05": "../版本归档/MYM-04",
-  "backup_before_mym06": "../版本归档/MYM-05",
-  "delivery_drawing_audit": "reports/交付图分层核对.html",
-  "latest_entry_revision": {
-    "front_x": 0.897,
-    "south_z": 9.734375,
-    "cad_origin": [
-      -35641.01108943,
-      976.06007678
-    ],
-    "outer": [
-      0.96,
-      0.7
-    ],
-    "clear_user": [
-      0.9,
-      0.68
-    ],
-    "entry_depth": 0.325,
-    "entry_segments": [
-      0.5,
-      0.6,
-      0.49
-    ],
-    "height_status": "暂沿用2.40m，非DWG测得",
-    "registration": "仅入户局部；原柜南端及正面为配准锚点，全屋尚未按DWG重建"
+  "source_of_truth": "本目录spatial.json与src下当前生成器；fixtures.json、custom-cabinets.json、furnishings.json为历史清单，不作为当前几何真源",
+  "handoff_directory": "/Users/beverley/Documents/Codex/2026-09-07/residential-spatial-design-3d/outputs/VB-01_Blender视觉基准",
+  "export_validation": "四套GLB完整性、图层语义、家具有无、原推拉门与新封窗互斥已检查；未启动Blender",
+  "material_revision": "2026-11-04 / AR3089H 300×300mm；68183 600×1200mm，均由用户确认",
+  "tile_size_confirmation_20261104": {
+    "AR3089H": {"size_mm": [300, 300], "confirmed_by": "用户明确确认"},
+    "68183": {"size_mm": [600, 1200], "confirmed_by": "用户明确确认用于客厅和走廊", "render_status": "整片砖缝与砖面木纹须区分；旧生成图及程序鱼骨纹未按整片规格校正，不能作为排砖依据"},
+    "layout_status": "确认单砖尺寸不等于确认铺砖数量；厨房中间地面暂按840×1520mm估算，柜深和门口边界尚待实测。生成图的3×3不作为排砖依据"
   },
-  "latest_version": "MYM-08"
+  "latest_blender_file": "../Blender项目/叻叻小屋-Blender-客餐厅品质样板-v04.blend",
+  "blender_sync": "本次地砖仅更新网页；v04仍为原材质，家具精修未导入网页",
+  "confirmed_floor_selection": {
+    "living": "罗浮威尔68183",
+    "corridor": "罗浮威尔68183",
+    "kitchen": "罗浮威尔郁金香AR3089H"
+  },
+  "render_preview": {
+    "file": "assets/materials/floor-comparison-20261103.jpg",
+    "basis": "v04模型临时替换地面材质后渲染，原blend文件保留",
+    "status": "材质与铺装尺度模拟，非现场实拍"
+  },
+  "public_deployment": {
+    "commit": "d01e312e8ded25919d7a6cf9ffef5bd59ecd2e43",
+    "date": "2026-11-03",
+    "url": "https://mandysin99.github.io/interiordesign/",
+    "scope": "在既有地砖更新上，仅追加客厅柜门外观、厨房仅换门板、说明页面及修正版效果图；公开站建筑几何沿用b926461，本地VB-01尺寸修正、DWG资料与微信原始截图未发布",
+    "verification": "GitHub Pages运行41621896616成功；新效果图页面与发布副本一致；本地和发布副本均通过厨房原有几何及主卧/儿童房/阳台保留测试"
+  }
 }
