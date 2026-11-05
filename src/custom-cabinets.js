@@ -18,14 +18,16 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  const roomIds={living:'living',study:'bedroom1',small:'bedroom2',master:'master',balcony:'balcony',bathroom:'bathroom'};
  function part(id,name,b,mat,room){let [x1,x2,z1,z2,y1,y2]=b;if(room==='study'){const sum=px(365)+px(512);[x1,x2]=[sum-x2,sum-x1];}const floor=lv(roomIds[room],'finished');const m=box('MYM-'+id,name,x1,x2,z1,z2,y1+floor,y2+floor,mat,group,'酷家乐改2全景环视：'+room+'；位置关系已比对，长度/深度/高度为白模适配暂值。'+source,'全景位置校正 · 尺寸待核');if(room==='study')m.userData.evidence='用户本轮调整：面向窗左书柜右书桌；原柜体分段参考酷家乐，数值仍待测。';m.userData.room=roomIds[room];m.userData.scheme='MYM-14';items.push(m);return m;}
  // Panel carcass: no opaque solid behind glass, openings remain genuinely open.
- function cabinet(id,name,rect,height,face,room,{bottom=0,doors='customWood',count=2,shelves=0}={}){
+ function cabinet(id,name,rect,height,face,room,{bottom=0,doors='customWood',count=2,shelves=0,fixed=[]}={}){
   const [x1,x2,z1,z2]=rect,w=['east','west'].includes(face)?z2-z1:x2-x1,d=['east','west'].includes(face)?x2-x1:z2-z1,t=.018;
   assemblies.push({id:'MYM-'+id,name,room:roomIds[room],min:[x1,bottom,z1],max:[x2,bottom+height,z2],face,status:'全景关系核对，尺寸待核'});
   function local(suffix,u1,u2,v1,v2,y1,y2,mat){let r;if(face==='east')r=[x2-v2,x2-v1,z1+u1,z1+u2];if(face==='west')r=[x1+v1,x1+v2,z1+u1,z1+u2];if(face==='north')r=[x1+u1,x1+u2,z1+v1,z1+v2];if(face==='south')r=[x1+u1,x1+u2,z2-v2,z2-v1];return part(id+'-'+suffix,name+' · '+suffix,[...r,bottom+y1,bottom+y2],mat,room);}
   for(const [n,a,b,c,e,f,g] of [['侧板A',0,t,0,d,0,height],['侧板B',w-t,w,0,d,0,height],['背板',t,w-t,d-t,d,t,height-t],['顶板',t,w-t,0,d,height-t,height],['底板',t,w-t,0,d,.04,.04+t]])local(n,a,b,c,e,f,g,'customWood');
   for(let i=1;i<=shelves;i++){const h=.07+(height-.10)*i/(shelves+1);local('层板'+i,t,w-t,.012,d-t,h,h+t,'customWood');}
   if(doors){for(let i=0;i<count;i++){const a=w*i/count+.004,b=w*(i+1)/count-.004;
-    if(doors==='cane'||doors==='rectangularCane'){
+    if(fixed.includes(i)){
+     local('固定门板'+i,a,b,-.022,.002,.075,height-.012,'customWood');
+    }else if(doors==='cane'||doors==='rectangularCane'){
      local('木框门'+i,a,b,-.022,.002,.075,height-.012,'customWood');
      const lo=id==='master-wardrobe'?.65:.11,hi=height-.065;const panel=local((doors==='rectangularCane'?'长方形':'拱形')+'藤编门芯'+i,a+.045,b-.045,-.026,-.025,lo,hi,'customWood');canePanel(panel,b-a-.09,hi-lo,face,doors==='rectangularCane');
     }else if(doors==='glass'){
@@ -82,7 +84,8 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  for(let i=0;i<3;i++){const lo=.07+i*.256,hi=lo+.25;coffeeDrawers.local('抽屉面'+i,.004,.796,-.022,.002,lo,hi,'beyCream');coffeeDrawers.local('抽屉把手'+i,.388,.412,-.045,-.022,(lo+hi)/2,(lo+hi)/2+.025,'customWood');}
  part('coffee-counter-north','餐边木色台面 · 1600mm暂定',[px(171),px(210),pz(308),pz(410.4),.85,.88],'customWood','living');
  part('coffee-back-north','餐边柜操作区背板',[px(171),px(173),pz(308),pz(410.4),.88,1.58],'customWood','living');
- cabinet('coffee-upper-north','佰怡家餐边上柜 · 三扇长方形藤编门',r(171,193,308,410.4),.80,'east','living',{bottom:1.58,doors:'rectangularCane',count:3,shelves:1});
+ part('coffee-wall-insert','餐边柜穿插墙体 · 后方整面木饰面',[px(171),px(173),pz(308),pz(410.4),0,2.40],'customWood','living');
+ cabinet('coffee-upper-north','佰怡家餐边上柜 · 左侧固定木饰面加两扇长方形藤编门',r(171,193,308,410.4),.80,'east','living',{bottom:1.58,doors:'rectangularCane',count:3,shelves:1,fixed:[0]});
  cabinet('tv-base','佰怡家电视低柜 · 奶油白门板 · 长2000mm',r(171,194,180,308),.38,'east','living',{count:4,doors:'beyCream'});
  part('tv-location','55英寸电视 · 16:9屏幕1218×685',[px(173),px(175),pz(205.03),pz(282.97),.92,1.605],'dark','living');
  // Opposite wall, beside the bathroom/room passage and L-shaped kitchen partition.
@@ -92,7 +95,7 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  part('bench-back','满墙软包靠背',[px(351),px(354.6),pz(435),pz(545.52),.49,.95],'cabinet','living');
  cabinet('bench-upper','卡座上方玻璃展示柜 · 分段暂沿用旧模型',r(336,354.6,435,490.26),lv('living','soffit')-1.87,'west','living',{bottom:1.87,doors:'glass',count:2,shelves:1});
  cabinet('bench-upper-wood','卡座上方奶油白吊柜',r(336,354.6,490.26,545.52),lv('living','soffit')-1.87,'west','living',{bottom:1.87,count:2,shelves:1,doors:'beyCream'});
- for(const mesh of items.filter(mesh=>/^MYM-(coffee-|tv-|dining-bench-|bench-)/.test(mesh.name))){Object.assign(mesh.userData,{scheme:'BEYHOME-20261103',evidence:'用户打开的佰怡家全景720参考：奶油白门板、暖木框架、长方形藤编；尺寸及部分分格沿用旧模型，非厂家深化图。'});}
+ for(const mesh of items.filter(mesh=>/^MYM-(coffee-|tv-|dining-bench-|bench-)/.test(mesh.name))){Object.assign(mesh.userData,{scheme:'BEYHOME-20261105',evidence:'用户最新版全景截图：餐边柜与后方木饰面墙体穿插，视觉上放大柜体；上柜最左侧为固定木饰面，不做开启门；右侧两扇为长方形藤编门。尺寸及部分分格沿用旧模型，非厂家深化图。'});}
  // Study: facing north window, user override mirrors below: bookcase left/west, desk right/east.
  // Reference 1: paired arched reeded glass doors, central open niche and drawers.
  for(const [id,z1,z2] of [['a',208,272],['b',299,359]]){
