@@ -86,7 +86,14 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  part('coffee-back-north','餐边柜操作区背板',[px(171),px(173),pz(308),pz(410.4),.88,1.58],'customWood','living');
  part('coffee-wall-insert','餐边柜穿插墙体 · 后方整面木饰面',[px(171),px(173),pz(308),pz(410.4),0,2.40],'customWood','living');
  cabinet('coffee-upper-north','佰怡家餐边上柜 · 左侧固定木饰面加两扇长方形藤编门',r(171,193,308,410.4),.80,'east','living',{bottom:1.58,doors:'rectangularCane',count:3,shelves:1,fixed:[0]});
- cabinet('tv-base','佰怡家电视低柜 · 奶油白门板 · 长2000mm',r(171,194,180,308),.38,'east','living',{count:4,doors:'beyCream'});
+ const tvBase=cabinet('tv-base','佰怡家电视低柜 · 奶油白三列六抽 · 长2000mm',r(171,194,180,308),.38,'east','living',{doors:false});
+ for(let column=0;column<3;column++)for(let row=0;row<2;row++){
+  const u1=column*tvBase.w/3+.004,u2=(column+1)*tvBase.w/3-.004,y1=.055+row*.145,y2=y1+.125;
+  tvBase.local('抽屉面'+column+'-'+row,u1,u2,-.022,.002,y1,y2,'beyCream');
+  tvBase.local('抽屉把手'+column+'-'+row,(u1+u2)/2-.012,(u1+u2)/2+.012,-.045,-.022,y1+.055,y1+.080,'customWood');
+ }
+ part('tv-counter','电视低柜暖木色台面 · 2000mm暂定',[px(171),px(194),pz(180),pz(308),.38,.425],'customWood','living');
+ part('tv-wall-right-return','电视墙右侧通顶木饰面收口',[px(194),px(209),pz(180),pz(308),0,2.40],'customWood','living');
  part('tv-location','55英寸电视 · 16:9屏幕1218×685',[px(173),px(175),pz(205.03),pz(282.97),.92,1.605],'dark','living');
  // Opposite wall, beside the bathroom/room passage and L-shaped kitchen partition.
  // Full wall length: corridor corner z435 through kitchen glass inside face z545.52.
