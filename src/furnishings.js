@@ -56,18 +56,19 @@ export function buildFurnishings({THREE,groups,box,px,pz,lv}){
  piece('rug','客厅地毯','living',[222,330,222,378],.005,.018,'rug');
  const side=piece('side-table','过道端小圆边几 · 直径450','living',[306,334.8,354,382.8],.46,.49,'customWood');side.geometry=new THREE.CylinderGeometry(.5,.5,1,40);
  const stem=piece('side-table-base','圆边几底座','living',[314,326.8,362,374.8],.02,.46,'customWood');stem.geometry=new THREE.CylinderGeometry(.5,.5,1,32);
- // 1100mm round hourglass table beside the banquette. Order specifies width only; H750 provisional.
- const table=piece('dining-table-top','沙漏餐桌 · 直径1100 · 岩板','living',[256.6,327,458.8,529.2],.725,.75,'sill');table.geometry=new THREE.CylinderGeometry(.5,.5,1,64);
+ // 1100mm round walnut table beside the banquette. Height remains provisional.
+ const table=piece('dining-table-top','深胡桃木圆餐桌 · 直径1100 · 高度暂定','living',[256.6,327,458.8,529.2],.725,.75,'customWood');table.geometry=new THREE.CylinderGeometry(.5,.5,1,64);
  const lower=piece('dining-table-lower','沙漏桌黑色圆盘底座','living',[273,311,475,513],.025,.065,'dark');lower.geometry=new THREE.CylinderGeometry(.5,.5,1,64);
  const upper=piece('dining-table-upper','沙漏桌收腰木柱','living',[281,303,483,505],.065,.725,'customWood');
  const profile=[new THREE.Vector2(.5,-.5),new THREE.Vector2(.46,-.46),new THREE.Vector2(.31,.25),new THREE.Vector2(.32,.40),new THREE.Vector2(.39,.5)];upper.geometry=new THREE.LatheGeometry(profile,64);
- for(let i=0;i<2;i++){const z=467+i*32;
- const seat=piece('dining-chair-seat'+i,'星木餐椅 · 棕色皮坐垫','living',[224,253,z,z+28],.43,.49,'fabric',true);seat.material=seat.material.clone();seat.material.color.set(0x9f7046);
+ for(let i=0;i<2;i++){const z=467+i*32,softChair=i===0;
+ const seat=piece('dining-chair-seat'+i,softChair?'餐椅 · 浅色软包坐垫':'星木餐椅 · 棕色皮坐垫','living',[224,253,z,z+28],.43,.49,softChair?'linen':'fabric',true);seat.material=seat.material.clone();seat.material.color.set(softChair?0xf0ece4:0x9f7046);
+ if(softChair){piece('dining-chair-back'+i,'餐椅 · 浅色软包靠背','living',[223,225,z,z+28],.56,.86,'linen',true);}
  for(const zz of [z,z+26])piece('dining-chair-backpost'+i+'-'+zz,'星木餐椅靠背木柱','living',[223,225,zz,zz+2],.43,.85,'customWood');
- for(let j=0;j<6;j++)piece('dining-chair-weave-v'+i+'-'+j,'浅色编织靠背竖带','living',[223.8,224.5,z+2+j*4,z+5.6+j*4],.56,.83,'linen');
- for(let j=0;j<4;j++)piece('dining-chair-weave-h'+i+'-'+j,'浅色编织靠背横带','living',[224.4,224.8,z+2,z+26],.56+j*.067,.617+j*.067,'fabric');
- for(const x of [225,250])for(const zz of [z+2,z+25])piece('dining-chair-leg'+i+'-'+x+'-'+zz,'餐椅木腿','living',[x,x+2,zz,zz+2],.02,.43,'customWood');}
- items.filter(m=>m.name.startsWith('SOFT-sofa')||m.name.startsWith('SOFT-dining')).forEach(m=>{if(m.name.startsWith('SOFT-sofa')&&!m.userData.keepMaterial){m.material=m.material.clone();m.material.color.set(0x242321);m.material.roughness=.62;}m.userData.evidence='木陌家具-8.29坚果.pdf：夜弦沙发2.5m、黑色半青皮；沙漏餐桌1.1m、白蜡木+岩板；星木餐椅2把。未注明深高暂定；款式按订单缩略图概括。';});
+ for(let j=0;j<6;j++)if(!softChair)piece('dining-chair-weave-v'+i+'-'+j,'浅色编织靠背竖带','living',[223.8,224.5,z+2+j*4,z+5.6+j*4],.56,.83,'linen');
+ for(let j=0;j<4;j++)if(!softChair)piece('dining-chair-weave-h'+i+'-'+j,'浅色编织靠背横带','living',[224.4,224.8,z+2,z+26],.56+j*.067,.617+j*.067,'fabric');
+ for(const x of [225,250])for(const zz of [z+2,z+25])piece('dining-chair-leg'+i+'-'+x+'-'+zz,'餐椅木腿','living',[x,x+2,zz,zz+2],.02,.43,softChair?'dark':'customWood');}
+ items.filter(m=>m.name.startsWith('SOFT-sofa')||m.name.startsWith('SOFT-dining')).forEach(m=>{if(m.name.startsWith('SOFT-sofa')&&!m.userData.keepMaterial){m.material=m.material.clone();m.material.color.set(0x242321);m.material.roughness=.62;}m.userData.evidence='用户最新版全景截图：深胡桃木圆餐桌、黑色中柱底座、浅色软包椅与棕色木编椅混搭；桌面约1100mm为现有方案暂值，款式和尺寸仍待选型确认。';});
  // Cushions have a softly inflated surface instead of bevelled rectangular slabs.
  for(const m of items){if(/SOFT-(sofa-(seat|backpad|lumbar|arm)|lounge-(seat|quilt))/.test(m.name)){
   const g=new THREE.SphereGeometry(1,40,24),v=g.attributes.position;
