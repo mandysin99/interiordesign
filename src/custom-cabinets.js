@@ -55,9 +55,13 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  // South is left when facing the cabinetry; 100mm is a provisional envelope before appliance clearances.
  cabinet('new-entry-slim','冰箱左侧薄抽 · 外宽100mm预留',[front-.600,front-.022,shoeStart-.130,shoeStart-.030],1.930,'east','living',{count:1,shelves:5});
  part('new-entry-fridge-top-infill','冰箱顶柜下接收口 · 通风构造待型号确认',[front-.025,front,fridgeNorth+.030,shoeStart-.030,1.930,2.026],'customWood','living');
- // Replace the 1100mm tall shoe cupboard with two equal zones; retain the 490mm console footprint.
- cabinet('new-entry-household','右半家政柜 · 分格存放厨电',[cabinetRear,front-.022,shoeStart,shoeStart+.550],entryTop,'east','living',{count:1,shelves:5});
- cabinet('new-entry-shoe','左半鞋柜',[cabinetRear,front-.022,shoeStart+.550,shoeStart+1.100],entryTop,'east','living',{count:1,shelves:7});
+ const entryNicheStart=shoeStart,entryNicheEnd=shoeStart+.550,entryTallEnd=shoeStart+1.100;
+ cabinet('new-entry-niche-drawers','入户柜开放格下方双抽屉',[cabinetRear,front-.022,entryNicheStart,entryNicheEnd],.85,'east','living',{count:2});
+ part('new-entry-niche-back','入户柜开放格木饰面背板',[cabinetRear,cabinetRear+.018,entryNicheStart,entryNicheEnd,.88,1.65],'customWood','living');
+ part('new-entry-niche-shelf','入户柜开放格底板',[cabinetRear,front-.022,entryNicheStart,entryNicheEnd,1.62,1.65],'customWood','living');
+ part('new-entry-niche-led','入户柜开放格暖光灯带',[front-.028,front-.018,entryNicheStart+.025,entryNicheEnd-.025,1.595,1.615],'metal','living');
+ cabinet('new-entry-niche-upper','入户柜开放格上方双门柜',[cabinetRear,front-.022,entryNicheStart,entryNicheEnd],entryTop-1.65,'east','living',{bottom:1.65,count:2});
+ cabinet('new-entry-tall','入户柜右侧通顶双门柜',[cabinetRear,front-.022,entryNicheEnd,entryTallEnd],entryTop,'east','living',{count:2});
  // Directly adjacent: 500 / 600 / 490, matching CAD plan divisions.
  cabinet('entry-shoes-near','近冰箱500段原柜',[cabinetRear,front-.022,shoeStart,shoeStart+.500],2.40,'east','living',{count:1,shelves:4});
  cabinet('entry-shoes','600段原鞋柜',[cabinetRear,front-.022,shoeStart+.500,shoeStart+1.100],2.40,'east','living',{count:1,shelves:4});
@@ -212,6 +216,6 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  for(const m of items.filter(m=>m.name.startsWith('MYM-small-upper-顶板')||m.name==='MYM-small-service-shelf'))Object.assign(m.userData,{removable:true,maintenance:'用户接受柜内检修；上方可拆顶板，实际拆卸路径现场确认'});
  const designItems=items.filter(m=>!retainedItems.includes(m));
  function setService(on){items.filter(m=>m.name.startsWith('MYM-small-upper-顶板')||m.name.startsWith('MYM-small-upper-门板')||m.name==='MYM-small-service-shelf').forEach(m=>m.visible=!on);}
- function setEntryInterior(on){items.filter(m=>/^MYM-new-entry-(shoe|household)-(门板|把手)/.test(m.name)).forEach(m=>m.visible=!on);}
+ function setEntryInterior(on){items.filter(m=>/^MYM-new-entry-(niche-drawers|niche-upper|tall)-(门板|把手)/.test(m.name)).forEach(m=>m.visible=!on);}
  return {group,setBed,setVanity,setService,setEntryInterior,items:designItems,retainedItems,entryGroup,entryRenovation,assemblies,entryFace,entryGeometry:{fridgeNorth,shoeStart,entrySouth,rear,front},sources:{primary:source}};
 }

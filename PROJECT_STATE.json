@@ -1,4 +1,20 @@
 {
+  "entry_latest_revision_20261105": {
+    "reference": "用户提供的尚诚家居 / 卓越九珑全景截图，入户柜近景三张",
+    "observed": [
+      "整面暖木色竖向木纹柜门，柜体与门套关系连续",
+      "左侧中部为开放格，背板为浅暖木色，顶部有连续暖光灯带",
+      "开放格下方为抽屉与落物台，右侧为通顶双门高柜",
+      "柜底悬空并有连续灯带，底部保留鞋位和扫地清洁空间",
+      "圆形木色小把手出现在右侧高柜门上；具体五金型号待核"
+    ],
+    "model_update": "已把入户定制层由两段整门柜改为开放格加下方双抽屉、上方双门柜及右侧通顶双门柜；暖木色、灯带和悬空关系按截图表达",
+    "not_confirmed": [
+      "柜体总高、分格宽度、底部悬空高度、门套收口",
+      "鞋位净空、插座位置、灯带电源和门把手型号",
+      "截图中的软装摆件不作为施工模型或采购清单"
+    ]
+  },
   "cabinet_supplier_revision_20261103": {
     "confirmed_by_user": {
       "master": "保留木与梦方案；铝柜",
@@ -28,7 +44,7 @@
   "latest_version": "VB-01",
   "base_version": "VB-01",
   "source_revision": "MYM-33",
-  "current_stage": "VB-01建筑几何沿用；已更新客厅佰怡家柜门风格、厨房仅换门板及已选地砖",
+  "current_stage": "VB-01建筑几何沿用；已更新入户柜最新版、客厅佰怡家柜门风格、厨房仅换门板及已选地砖",
   "purpose": "Blender视觉模拟基准；不用于定制下单、开料或施工放线",
   "construction_calibrated": false,
   "geometry_source": "spatial.json + src/model.js + src/existing.js + src/custom-cabinets.js + src/furnishings.js",
