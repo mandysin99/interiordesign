@@ -113,7 +113,8 @@ export function buildCustom({THREE,groups,box,px,pz,lv}){
  for(let j=0;j<12;j++){const u=lo+(hi-lo)*j/12,mid=u+(hi-lo)/24;const y=ht-.035-radius+Math.sqrt(Math.max(0,radius*radius-(mid-(lo+hi)/2)**2));c.local('拱顶木饰片'+leaf+'-'+j,u,u+(hi-lo)/12,-.024,-.020,y,ht-.012,'customWood');}
  for(let u=lo;u<hi;u+=.022)c.local('长虹纹'+leaf+'-'+u.toFixed(3),u,u+.004,-.025,-.021,.11,ht-.055,'glass');}
  }
- cabinet('study-niche','书柜中央开放格',r(491,511,272,299),lv('bedroom1','soffit')-.80,'west','study',{bottom:.76,doors:false,shelves:4});
+ const studyNiche=cabinet('study-niche','书柜中央开放格',r(491,511,272,299),lv('bedroom1','soffit')-.80,'west','study',{bottom:.76,doors:false,shelves:4});
+ for(const y of [1.08,1.43,1.78,2.13])studyNiche.local('展示层暖光灯带'+y.toFixed(2),.04,studyNiche.w-.04,-.040,-.018,y,y+.014,'metal');
  cabinet('study-niche-base','中央抽屉组',r(491,511,272,299),.76,'west','study',{count:1});
  for(const h of [.25,.49])part('study-center-drawer-'+h,'中央抽屉分缝',[px(491)-.024,px(491)-.021,pz(272),pz(299),h,h+.006],'metal','study');
  part('study-desk','书房固定长桌段',[px(366),px(397),pz(275),pz(358),.73,.765],'customWood','study');

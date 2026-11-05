@@ -68,6 +68,17 @@ export function buildFurnishings({THREE,groups,box,px,pz,lv}){
  for(let j=0;j<6;j++)if(!softChair)piece('dining-chair-weave-v'+i+'-'+j,'浅色编织靠背竖带','living',[223.8,224.5,z+2+j*4,z+5.6+j*4],.56,.83,'linen');
  for(let j=0;j<4;j++)if(!softChair)piece('dining-chair-weave-h'+i+'-'+j,'浅色编织靠背横带','living',[224.4,224.8,z+2,z+26],.56+j*.067,.617+j*.067,'fabric');
  for(const x of [225,250])for(const zz of [z+2,z+25])piece('dining-chair-leg'+i+'-'+x+'-'+zz,'餐椅木腿','living',[x,x+2,zz,zz+2],.02,.43,softChair?'dark':'customWood');}
+ const studyMonitor=piece('study-monitor','书房显示器','bedroom1',[381,394,316,340],.765,1.055,'dark');studyMonitor.geometry=new THREE.BoxGeometry(1,1,1);
+ piece('study-monitor-stand','显示器支架','bedroom1',[386,389,326,330],.765,.835,'dark');
+ const studyLaptop=piece('study-laptop','书房笔记本电脑','bedroom1',[373,383,294,309],.77,.805,'dark');studyLaptop.rotation.x=-.18;
+ piece('study-laptop-screen','笔记本屏幕','bedroom1',[374,382,300,307],.805,1.00,'dark');
+ piece('study-desk-lamp','书房台灯','bedroom1',[386,390,284,292],.765,1.12,'customWood');
+ const studyPlant=piece('study-plant','书房桌面绿植','bedroom1',[392,398,344,354],.765,1.18,'accent');studyPlant.geometry=new THREE.CylinderGeometry(.5,.5,1,18);
+ for(const [id,z] of [['left',289],['right',332]]){
+  piece('study-chair-seat-'+id,'书房椅米白软包坐垫','bedroom1',[360,373,z,z+24],.44,.52,'linen',true);
+  piece('study-chair-back-'+id,'书房椅黑色框架靠背','bedroom1',[359,362,z,z+24],.50,.88,'dark',true);
+  for(const x of [360,370])for(const zz of [z+2,z+21])piece('study-chair-leg-'+id+'-'+x+'-'+zz,'书房椅黑色椅腿','bedroom1',[x,x+1.8,zz,zz+1.8],.02,.44,'dark');
+ }
  items.filter(m=>m.name.startsWith('SOFT-sofa')||m.name.startsWith('SOFT-dining')).forEach(m=>{if(m.name.startsWith('SOFT-sofa')&&!m.userData.keepMaterial){m.material=m.material.clone();m.material.color.set(0x242321);m.material.roughness=.62;}m.userData.evidence='用户最新版全景截图：深胡桃木圆餐桌、黑色中柱底座、浅色软包椅与棕色木编椅混搭；桌面约1100mm为现有方案暂值，款式和尺寸仍待选型确认。';});
  // Cushions have a softly inflated surface instead of bevelled rectangular slabs.
  for(const m of items){if(/SOFT-(sofa-(seat|backpad|lumbar|arm)|lounge-(seat|quilt))/.test(m.name)){
